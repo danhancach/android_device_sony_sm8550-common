@@ -73,12 +73,6 @@ on post-fs-data
     mkdir /data/vendor/egis 0770 system system
     start ets_hal
 
-    # Create 360ra dir for audioHAL
-    mkdir /data/vendor/360ra 0775 audioserver audio
-    copy /vendor/etc/alc.speaker.bin /data/vendor/360ra/alc.speaker.bin
-    chmod 0770 /data/vendor/360ra/alc.speaker.bin
-    chown audioserver audio /data/vendor/360ra/alc.speaker.bin
-
 on early-boot
     # Display
     chown system system /sys/devices/dsi_panel_driver/flm2_mode
