@@ -1,2 +1,5 @@
-# GitNexus MCP tool data
+# GitNexus / Claude tool artifacts
 .gitnexus/
+.claude/
+AGENTS.md
+CLAUDE.md
