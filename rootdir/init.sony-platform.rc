@@ -235,6 +235,10 @@ on property:vendor.smartstamina.touchreport=1
 on property:vendor.smartstamina.touchreport=0
     write /sys/devices/virtual/input/lxs_ts_input/frame_rate_np "0 2"
 
-# create directory for wfd
 on post-fs-data
+    # create directory for wfd
     mkdir /data/vendor/wfd 0777 system system
+
+# Re-probe cs35l45 after vendor firmware is mounted (L speaker DSP race)
+on property:vold.post_fs_data_done=1
+    exec - root root -- /vendor/bin/reload_cirrus_amp.sh

@@ -114,3 +114,9 @@ sh_binary {
     src: "init.kernel.post_boot-kalama.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "reload_cirrus_amp.sh",
+    src: "bin/reload_cirrus_amp.sh",
+    vendor: true,
+}
