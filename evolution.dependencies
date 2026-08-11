@@ -1,0 +1,38 @@
+[
+  {
+    "repository": "danhancach/hardware_sony",
+    "target_path": "hardware/sony",
+    "remote": "github-non-los",
+    "branch": "evox"
+  },
+  {
+    "repository": "danhancach/android_kernel_sony_sm8550",
+    "target_path": "kernel/sony/sm8550",
+    "remote": "github-non-los",
+    "branch": "evox"
+  },
+  {
+    "repository": "danhancach/android_kernel_sony_sm8550-modules",
+    "target_path": "kernel/sony/sm8550-modules",
+    "remote": "github-non-los",
+    "branch": "evox"
+  },
+  {
+    "repository": "LineageOS/android_kernel_sony_sm8550-devicetrees",
+    "target_path": "kernel/sony/sm8550-devicetrees",
+    "remote": "github-non-los",
+    "branch": "lineage-24.0"
+  },
+  {
+    "repository": "danhancach/proprietary_vendor_sony_sm8550-common",
+    "target_path": "vendor/sony/sm8550-common",
+    "remote": "github-non-los",
+    "branch": "evox"
+  },
+  {
+    "repository": "danhancach/vendor_sony_extra",
+    "target_path": "vendor/sony/extra",
+    "remote": "github-non-los",
+    "branch": "evox"
+  }
+]
