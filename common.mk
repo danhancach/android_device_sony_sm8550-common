@@ -490,3 +490,13 @@ $(call inherit-product, hardware/sony/XperiaModules.mk)
 
 # Vendor blobs
 $(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
+
+# cfg80211 regulatory.db (signed wireless-regdb)
+# Also ship on vendor_ramdisk /lib/firmware so the kernel can Direct-load
+# both db + p7s (nested request_firmware from the ueventd callback fails).
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/firmware/regulatory.db:$(TARGET_COPY_OUT_VENDOR)/firmware/regulatory.db \
+    $(LOCAL_PATH)/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_VENDOR)/firmware/regulatory.db.p7s \
+    $(LOCAL_PATH)/firmware/regulatory.db:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/regulatory.db \
+    $(LOCAL_PATH)/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/regulatory.db.p7s
+
