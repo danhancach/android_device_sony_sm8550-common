@@ -488,9 +488,6 @@ TARGET_SUPPORTS_SOUND_ENHANCEMENT_ADDON := true
 
 $(call inherit-product, hardware/sony/XperiaModules.mk)
 
-# Vendor blobs
-$(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
-
 # cfg80211 regulatory.db (signed wireless-regdb)
 # Also ship on vendor_ramdisk /lib/firmware so the kernel can Direct-load
 # both db + p7s (nested request_firmware from the ueventd callback fails).
@@ -500,3 +497,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/firmware/regulatory.db:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/regulatory.db \
     $(LOCAL_PATH)/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/regulatory.db.p7s
 
+# tcmd seccomp: allow lseek (must precede vendor inherit so this dest wins)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy
+
+# Vendor blobs
+$(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
