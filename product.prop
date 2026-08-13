@@ -1,6 +1,12 @@
 # Audio
 audio.offload.min.duration.secs=30
 
+# Display (product-restricted; cannot be set from vendor_init)
+vendor.display.disable_rounded_corner=1
+
+# NTP
+persist.backup.ntpServer=0.pool.ntp.org
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.leaudio.dual_bidirection_swb.supported=true
