@@ -1,0 +1,3 @@
+# Android 17 labels older-SDK priv-apps as priv_app_36
+allow priv_app_36 hal_miscta_service:service_manager find;
+binder_call(priv_app_36, vendor_hal_miscta_default)

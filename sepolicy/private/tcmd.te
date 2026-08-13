@@ -1,0 +1,2 @@
+# tcmd uses minijail/seccomp and cannot exec crash_dump.
+crash_dump_fallback(vendor_tcmd);
