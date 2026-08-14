@@ -1,0 +1,17 @@
+# KT VoLTE EFS provisioning (imported Xperia + Korea SIM, MCC/MNC 450-08)
+
+on property:init.svc.vendor.diag-router=running
+    setprop persist.dbg.ims_avail_ovr 1
+    setprop persist.dbg.volte_avail_ovr 1
+    setprop persist.dbg.vt_avail_ovr 1
+    setprop persist.dbg.wfc_avail_ovr 1
+    setprop persist.vendor.radio.enhanced_4g_lte_on 1
+    setprop persist.vendor.radio.volte_vt_enabled 1
+    start volte_kt_efs
+
+service volte_kt_efs /vendor/bin/efs_kt_loader install
+    class late_start
+    oneshot
+    user root
+    group system oem_2997 oem_2993 vendor_qti_diag
+    seclabel u:r:nv_updater:s0
