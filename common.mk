@@ -361,7 +361,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 PRODUCT_PACKAGES += \
     fsck.exfat \
-    mkfs.exfat
+    fsck.exfat.sony \
+    mkfs.exfat \
+    mkfs.exfat.sony
 
 # Telephony
 PRODUCT_PACKAGES += \
