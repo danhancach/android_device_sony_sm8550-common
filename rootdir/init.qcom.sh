@@ -447,6 +447,23 @@ if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "
     # the group must be root, otherwise this script could not add "W" for group recursively
     chown -hR radio.root /data/vendor/modem_config/*
 fi
+
+# Overlay Korea KT MBN profile not present in Sony ROW firmware
+if [ -d /vendor/etc/modem_korea ]; then
+    cp --preserve=m -dr /vendor/etc/modem_korea/mcfg_sw/* /data/vendor/modem_config/mcfg_sw/
+    if [ -f /vendor/etc/modem_korea/mbn_sw_append.txt ]; then
+        while IFS= read -r line; do
+            case "$line" in
+                ""|\#*) continue ;;
+            esac
+            if ! grep -qxF "$line" /data/vendor/modem_config/mcfg_sw/mbn_sw.txt 2>/dev/null; then
+                echo "$line" >> /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
+            fi
+        done < /vendor/etc/modem_korea/mbn_sw_append.txt
+    fi
+    chown -hR radio.root /data/vendor/modem_config/mcfg_sw/generic/Korea 2>/dev/null
+fi
+
 chmod g-w /data/vendor/modem_config
 setprop ro.vendor.ril.mbn_copy_completed 1
 

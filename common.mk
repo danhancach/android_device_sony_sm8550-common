@@ -392,6 +392,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modem/mcfg_sw/generic/Korea/KT/Commercial_KT_LTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/etc/modem_korea/mcfg_sw/generic/Korea/KT/Commercial_KT_LTE/mcfg_sw.mbn \
+    $(LOCAL_PATH)/modem/mbn_sw_append.txt:$(TARGET_COPY_OUT_VENDOR)/etc/modem_korea/mbn_sw_append.txt
+
+PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.euicc.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \

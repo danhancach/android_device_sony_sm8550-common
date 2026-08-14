@@ -4,6 +4,7 @@
 //
 
 soong_namespace {
+    imports: ["vendor/sony/sm8550-common"],
 }
 
 install_symlink {
