@@ -154,6 +154,10 @@ vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 
 # Audio FX modules
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libbundlewrapper1.so
+vendor/lib64/soundfx/libbundlewrapper2.so
+vendor/lib64/soundfx/libbundlewrapper3.so
+vendor/lib64/soundfx/libbundlewrapper4.so
 vendor/lib64/soundfx/libquasar.so
 vendor/lib64/soundfx/libshoebox.so
 
