@@ -1,0 +1,5 @@
+# IMS availability override (init.volte-kt.rc / vendor_init)
+persist.dbg.ims_avail_ovr       u:object_r:telephony_config_prop:s0 exact int
+persist.dbg.ims_avail_ovr0      u:object_r:telephony_config_prop:s0 exact int
+persist.dbg.ims_avail_ovr1      u:object_r:telephony_config_prop:s0 exact int
+persist.dbg.ims_avail_ovr2      u:object_r:telephony_config_prop:s0 exact int
