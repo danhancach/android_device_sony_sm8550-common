@@ -59,6 +59,12 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- Auto-brightness responsiveness (AOSP default: 4000/8000ms debounce, 250ms sensor rate) -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessInitialLightSensorRate">100</integer>
+    <integer name="config_autoBrightnessLightSensorRate">100</integer>
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
@@ -227,6 +233,22 @@
         <item>720</item>
         <item>1000</item>
     </array>
+
+    <!-- Hysteresis: 5% brighten / 10% darken (AOSP default: 10% / 20%) -->
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>50</item>
+    </integer-array>
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>100</item>
+    </integer-array>
+
+    <!-- Screen brightness hysteresis: 5% brighten / 10% darken (AOSP default: 10% / 20%) -->
+    <integer-array name="config_screenBrighteningThresholds">
+        <item>50</item>
+    </integer-array>
+    <integer-array name="config_screenDarkeningThresholds">
+        <item>100</item>
+    </integer-array>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
