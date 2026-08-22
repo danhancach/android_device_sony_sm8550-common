@@ -523,4 +523,7 @@
 
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
+
+    <!-- Xperia 5 V live wallpaper (LWP-5V / com.sonymobile.wallpaper.de) -->
+    <string name="default_wallpaper_component" translatable="false">com.sonymobile.wallpaper.de/com.sonymobile.wallpaper.de.DefaultWallpaperService</string>
 </resources>
