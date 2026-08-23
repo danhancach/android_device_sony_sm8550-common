@@ -8,10 +8,11 @@ on early-boot
 on post-fs-data
     # Create 360ra dir for audioHAL / upmix tuning.
     mkdir /data/vendor/360ra 0775 audioserver audio
+    restorecon /data/vendor/360ra
 
     # Seed runtime tuning from vendor (stock /data/vendor/360ra layout).
     exec - audioserver audio -- /system/bin/sh -c "if [ -d /vendor/etc/360ra ]; then cp -rn /vendor/etc/360ra/. /data/vendor/360ra/; find /data/vendor/360ra -type d -exec chmod 0775 {} +; find /data/vendor/360ra -type f -exec chmod 0664 {} +; chown -R audioserver:audio /data/vendor/360ra; restorecon -RF /data/vendor/360ra; fi"
 
 on boot
-    # Re-label after vendor sepolicy OTA (hal_audio needs vendor_threesixtyra_data_file).
+    # Re-label after vendor sepolicy OTA (hal_audio / threesixtyra_app need vendor_threesixtyra_data_file).
     restorecon -RF /data/vendor/360ra
