@@ -219,6 +219,7 @@ PRODUCT_PACKAGES += \
     init.sony-device-common.rc \
     init.sony-platform.rc \
     init.sony.rc \
+    bt_refresh_after_audioserver.sh \
     reload_cirrus_amp.sh \
     ueventd.qcom.rc \
     ueventd.sony.rc

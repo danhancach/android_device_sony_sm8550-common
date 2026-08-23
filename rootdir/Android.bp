@@ -127,3 +127,9 @@ sh_binary {
     src: "bin/reload_cirrus_amp.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "bt_refresh_after_audioserver.sh",
+    src: "bin/bt_refresh_after_audioserver.sh",
+    vendor: true,
+}
