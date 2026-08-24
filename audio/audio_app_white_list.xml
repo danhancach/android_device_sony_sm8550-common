@@ -165,9 +165,4 @@
         <audio-format>1</audio-format>
         <bit-rate>-1</bit-rate>
     </app-item>
-    <app-item>
-        <package-name>com.maxmpz.audioplayer</package-name>
-        <audio-format>1</audio-format>
-        <bit-rate>-1</bit-rate>
-    </app-item>
 </app-list>
