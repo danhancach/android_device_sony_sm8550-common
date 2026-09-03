@@ -29,6 +29,10 @@ on early-boot
     setprop persist.bluetooth.a2dp_aac.vbr_supported true
 
 on early-init
+    # Xperia phones have no hardware nav keys; must be set before system_server
+    # reads DisplayPolicy (qemu.hw.mainkeys empty + missing RRO => no nav bar).
+    setprop qemu.hw.mainkeys 0
+
     # radio
     wait /dev/block/by-name/LTALabel
     exec_start msim_sh

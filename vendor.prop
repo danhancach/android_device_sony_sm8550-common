@@ -142,6 +142,8 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
 # Display
+# Software navigation bar (no hardware keys on Xperia 5V / sm8550).
+qemu.hw.mainkeys=0
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
 ro.surface_flinger.supports_background_blur=1
