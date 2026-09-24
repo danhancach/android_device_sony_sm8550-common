@@ -59,6 +59,12 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- Auto-brightness responsiveness (AOSP default: 4000/8000ms debounce, 250ms sensor rate) -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessInitialLightSensorRate">100</integer>
+    <integer name="config_autoBrightnessLightSensorRate">100</integer>
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
@@ -227,6 +233,22 @@
         <item>720</item>
         <item>1000</item>
     </array>
+
+    <!-- Hysteresis: 5% brighten / 10% darken (AOSP default: 10% / 20%) -->
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>50</item>
+    </integer-array>
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>100</item>
+    </integer-array>
+
+    <!-- Screen brightness hysteresis: 5% brighten / 10% darken (AOSP default: 10% / 20%) -->
+    <integer-array name="config_screenBrighteningThresholds">
+        <item>50</item>
+    </integer-array>
+    <integer-array name="config_screenDarkeningThresholds">
+        <item>100</item>
+    </integer-array>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
@@ -523,4 +545,28 @@
 
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
+
+    <!-- Xperia 5 V live wallpaper (LWP-5V / com.sonymobile.wallpaper.de) -->
+    <string name="default_wallpaper_component" translatable="false">com.sonymobile.wallpaper.de/com.sonymobile.wallpaper.de.DefaultWallpaperService</string>
+
+    <!-- Pixel ringtone haptic: gioi han bien do kenh AUDIO_HAPTIC (AF scaleHapticData).
+         Mac dinh AOSP = 0 -> maxAmplitude=NaN voi may nay mau haptic ve HAL toan 0.
+         Pixel lynx/felix dung 0.32 (an toan LRA). pdx237 CS40 ASP yeu o 0.32 -> 0.75.
+         clipHapticData: limit>=1 thi khong clip; 0.75 ~x2.3 so voi 0.32, con headroom. -->
+    <item name="config_hapticChannelMaxVibrationAmplitude" format="float" type="dimen">0.75</item>
+
+    <!-- Scale tuyet doi theo muc Low/Med/High (khong phu thuoc default).
+         HIGH>1.0 de oneshot/compose manh hon khi user max; Low/Med van lech ro. -->
+    <string-array name="config_vibrationIntensityScaleFactors" translatable="false">
+        <item>0.55</item>
+        <item>0.90</item>
+        <item>1.40</item>
+    </string-array>
+
+    <!-- ASP / external vibration (ringtone haptic): HIGH 1.15 + clip 0.75. -->
+    <string-array name="config_externalVibrationIntensityScaleFactors" translatable="false">
+        <item>0.50</item>
+        <item>0.80</item>
+        <item>1.15</item>
+    </string-array>
 </resources>
