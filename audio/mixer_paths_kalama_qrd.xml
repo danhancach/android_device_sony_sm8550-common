@@ -445,9 +445,9 @@
     </path>
 
     <path name="haptics-dev">
-        <!--
-        <ctl name="SWR DAC_Port Switch" value="1" />
-        -->
+        <!-- Pixel ringtone: PCM MI2S/ASP -> OUT/LRA; unmute A2H L/R enable. -->
+        <ctl name="Haptics Source" value="PCM" />
+        <ctl name="A2H Mute Switch" value="0 0" />
     </path>
 
     <path name="speaker-mono">
