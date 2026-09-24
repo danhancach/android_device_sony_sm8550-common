@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy name="ca_plmn_list_asia" schema_ver="1" policy_ver="44.2.7">
+  <!-- 
+    [PLMN-level LTE CA Combinations for Asia]
+    This file defines LTE CA combos specific to PLMNs in Asian regions.
+    - Validated against spectrum allocations in band_set_01.xml for 2025.
+    - Removed invalid bands for Optus (505-02), China Unicom (460-01), Singtel (525-01), and Bharti Airtel (405-854).
+  -->
+  <ca_plmn_list ns="global" name="plmn_ca_01">
+    <ca_plmn plmn="450-05">
+      <ca_band_combo>1A-3A, 1A-5A, 3A-5A, 1A-7A, 3A-7A, 5A-7A</ca_band_combo>
+      <ca_band_combo>1A-3A-5A, 1A-3A-7A, 3A-5A-7A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="450-08">
+      <ca_band_combo>1A-3A, 3A-8A</ca_band_combo>
+      <ca_band_combo>1A-3A-8A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="450-06">
+      <ca_band_combo>1A-5A, 1A-7A, 5A-7A</ca_band_combo>
+      <ca_band_combo>1A-5A-7A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="505-02">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-28A, 7A-28A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-28A, 1A-3A-7A-28A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="505-03">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-28A, 3A-7A, 3A-28A, 7A-28A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 1A-3A-28A, 3A-7A-28A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="505-01">
+      <ca_band_combo>1A-3A, 1A-5A, 3A-5A, 3A-7A</ca_band_combo>
+      <ca_band_combo>1A-3A-5A, 1A-3A-7A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="460-00">
+      <ca_band_combo>3A-41A, 39A-41A</ca_band_combo>
+      <ca_band_combo>41C, 3A-41C, 39A-41C, 3A-39A-41A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="460-01">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A</ca_band_combo>
+      <ca_band_combo>1A-3C, 1A-3A-7A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="525-03">
+      <ca_band_combo>1A-3A, 1A-5A, 3A-5A</ca_band_combo>
+      <ca_band_combo>1A-3A-5A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="525-01">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="452-02">
+      <ca_band_combo>3A-5A, 5A-40A</ca_band_combo>
+      <ca_band_combo>40C, 3A-5A-40A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="405-854">
+      <ca_band_combo>1A-3A, 3A-5A</ca_band_combo>
+      <ca_band_combo>1A-3A-5A</ca_band_combo>
+    </ca_plmn>
+  </ca_plmn_list>
+</policy>

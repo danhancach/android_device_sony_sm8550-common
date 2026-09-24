@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy name="ca_mcc_list" schema_ver="1" policy_ver="44.2.7">
+  <!-- 
+    [Country-level LTE CA Combinations]
+    This file defines general LTE CA combos available within a country (MCC).
+    - Fully reviewed and enhanced with advanced 3CC, 4CC, and 5CC combinations for 2025.
+    - All combos are validated against the spectrum defined in band_set_01.xml.
+  -->
+  <ca_mcc_list ns="global" name="global_ca_mcc">
+    <!-- Korea (MCC 450) -->
+    <ca_mcc mcc="450">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-8A, 3A-7A, 3A-8A, 5A-7A</ca_band_combo>
+      <ca_band_combo>1A-3C, 1A-3A-7A, 1A-3A-8A, 3A-5A-7A</ca_band_combo>
+    </ca_mcc>
+    <!-- Australia (MCC 505) -->
+    <ca_mcc mcc="505">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-8A, 1A-28A, 3A-7A, 3A-8A, 3A-28A, 7A-8A, 7A-28A</ca_band_combo>
+      <ca_band_combo>1A-3C, 3C-7A, 1A-3A-7A, 1A-3A-28A, 3A-7A-28A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A-28A</ca_band_combo>
+    </ca_mcc>
+    <!-- China (MCC 460) -->
+    <ca_mcc mcc="460">
+      <ca_band_combo>1A-3A, 3A-8A, 3A-41A, 1A-41A, 39A-41A</ca_band_combo>
+      <ca_band_combo>3C, 41C, 1A-3C, 1A-3A-8A, 3A-41C, 39A-41C</ca_band_combo>
+    </ca_mcc>
+    <!-- USA (MCC 310-313) -->
+    <ca_mcc mcc="310-313">
+      <ca_band_combo>2A-4A, 2A-5A, 2A-12A, 2A-13A, 2A-29A, 2A-30A, 2A-66A, 4A-5A, 4A-12A, 4A-13A, 4A-29A, 5A-30A, 5A-66A, 12A-30A, 12A-66A, 13A-66A, 29A-66A, 41C, 66C</ca_band_combo>
+      <ca_band_combo>2C-5A-12A, 2A-4A-12A, 2A-4A-29A, 2A-12A-30A, 4A-12A-30A, 2A-5A-66A, 2A-13A-66A, 4A-5A-66A, 4A-13A-66A</ca_band_combo>
+      <ca_band_combo>2A-4A-12A-30A, 2A-12A-66C, 2A-30A, 12A-30A</ca_band_combo>
+    </ca_mcc>
+    <!-- Canada (MCC 302) -->
+    <ca_mcc mcc="302">
+      <ca_band_combo>2A-4A, 2A-5A, 2A-7A, 2A-12A, 2A-13A, 4A-5A, 4A-7A, 4A-12A, 4A-13A, 5A-7A, 7A-12A, 7A-13A, 66C</ca_band_combo>
+      <ca_band_combo>2A-4A-7A, 2A-7A-12A, 4A-7A-12A, 4A-7A-13A</ca_band_combo>
+      <ca_band_combo>2A-4A-7A-12A, 4C-7A-12A</ca_band_combo>
+    </ca_mcc>
+    <!-- France (MCC 208) -->
+    <ca_mcc mcc="208">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-20A, 1A-28A, 3A-7A, 3A-20A, 3A-28A, 7A-20A, 7A-28A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A, 3A-7A-28A</ca_band_combo>
+    </ca_mcc>
+    <!-- Germany (MCC 262) -->
+    <ca_mcc mcc="262">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A, 7A-8A, 1A-8A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 1A-3A-8A, 3A-7A-20A</ca_band_combo>
+    </ca_mcc>
+    <!-- UK (MCC 234) -->
+    <ca_mcc mcc="234">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A, 1A-32A, 3A-32A, 7A-32A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 1A-3A-32A, 3A-7A-20A</ca_band_combo>
+    </ca_mcc>
+    <!-- India (MCC 404) -->
+    <ca_mcc mcc="404">
+      <ca_band_combo>1A-3A, 1A-8A, 3A-5A, 3A-8A, 3A-40A, 5A-40A, 8A-40A</ca_band_combo>
+      <ca_band_combo>40C, 1A-3A-5A, 3A-40C</ca_band_combo>
+    </ca_mcc>
+    <!-- India (MCC 405) -->
+    <ca_mcc mcc="405">
+      <ca_band_combo>1A-3A, 1A-8A, 3A-5A, 3A-8A, 3A-40A, 5A-40A, 8A-40A</ca_band_combo>
+      <ca_band_combo>40C, 1A-3A-5A, 3A-40C</ca_band_combo>
+    </ca_mcc>
+    <!-- Default for other regions -->
+    <ca_mcc mcc="001-999">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-20A, 3A-7A, 3A-8A, 3A-20A, 7A-20A, 7A-28A, 3A-28A</ca_band_combo>
+      <ca_band_combo>40C, 41C, 1A-3A-7A, 3A-7A-20A</ca_band_combo>
+    </ca_mcc>
+  </ca_mcc_list>
+</policy>

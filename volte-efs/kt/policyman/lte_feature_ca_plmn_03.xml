@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy name="ca_plmn_list_europe" schema_ver="1" policy_ver="44.2.7">
+  <!-- 
+    [PLMN-level LTE CA Combinations for Europe]
+    This file defines LTE CA combos specific to PLMNs in European regions.
+    - Validated against spectrum allocations for 2025.
+    - Band 38 (TDD 2600MHz) confirmed for Germany (262-03).
+  -->
+  <ca_plmn_list ns="global" name="plmn_ca_03">
+    <ca_plmn plmn="262-01">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="262-03">
+      <ca_band_combo>1A-3A, 1A-20A, 3A-20A, 1A-38A, 3A-38A</ca_band_combo>
+      <ca_band_combo>1A-3A-20A, 1A-3A-38A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="260-01">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A, 1A-3A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="260-06">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A, 1A-32A, 3A-32A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A, 1A-7A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="260-02">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-8A, 3A-7A, 3A-8A, 3A-20A, 7A-8A, 7A-20A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-8A, 3A-7A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="260-03">
+      <ca_band_combo>3A-7A, 3A-20A, 7A-20A, 3A-38A, 7A-38A</ca_band_combo>
+      <ca_band_combo>3A-7A-20A, 3A-7A-38A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="231-01">
+      <ca_band_combo>3A-7A, 3A-20A, 7A-20A, 7A-38A</ca_band_combo>
+      <ca_band_combo>3A-7A-20A, 3A-7A-38A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="231-02">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="231-06">
+      <ca_band_combo>1A-3A, 3A-8A, 1A-38A, 3A-38A</ca_band_combo>
+      <ca_band_combo>1A-3A, 1A-3A-8A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="293-40">
+      <ca_band_combo>1A-3A, 3A-7A, 3A-20A, 7A-20A, 1A-32A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A, 1A-3A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="293-41">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 3A-20A, 7A-20A, 1A-32A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A, 1A-7A-32A</ca_band_combo>
+    </ca_plmn>
+  </ca_plmn_list>
+</policy>

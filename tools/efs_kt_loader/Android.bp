@@ -1,0 +1,10 @@
+cc_binary {
+    name: "efs_kt_loader",
+    vendor: true,
+    srcs: ["efs_kt_loader.c"],
+    shared_libs: [
+        "libc",
+        "libdl",
+        "liblog",
+    ],
+}

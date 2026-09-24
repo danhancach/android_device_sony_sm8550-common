@@ -1,0 +1,20 @@
+<data_3gpp_configuration>
+  <version>1.0</version>
+  <generic_config>
+    <ui_config>
+      <rat value="5G">
+        <Basic>
+          <IndConfig>1</IndConfig>
+           <ConnectConfig>
+             <Timer1>11</Timer1>
+             <Timer2>3</Timer2>
+            <Config>SCG</Config>
+           </ConnectConfig>
+          <IdleConfig>
+            <Config>SIB2</Config>
+          </IdleConfig>
+        </Basic>
+      </rat>
+    </ui_config>
+  </generic_config>
+</data_3gpp_configuration>

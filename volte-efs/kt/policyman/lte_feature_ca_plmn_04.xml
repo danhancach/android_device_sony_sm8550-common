@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy name="ca_plmn_list" schema_ver="1" policy_ver="44.2.7">
+  <!-- 
+    [PLMN-level LTE CA Combinations for Middle East/Other Asia]
+    This file defines LTE CA combos specific to PLMNs in the Middle East and other Asian regions.
+    - Validated against spectrum allocations for 2025.
+    - Band 38 (TDD 2600MHz) confirmed for Saudi Arabia (STC, Vodafone SA).
+  -->
+  <ca_plmn_list ns="global" name="middle_east_asia_ca_plmn">
+    <ca_plmn plmn="420-01">
+      <ca_band_combo>1A-3A, 3A-28A, 1A-38A, 3A-40A</ca_band_combo>
+      <ca_band_combo>1A-3A-28A, 1A-3A-38A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="420-03">
+      <ca_band_combo>1A-3A, 1A-8A, 3A-8A, 1A-38A</ca_band_combo>
+      <ca_band_combo>1A-3A-8A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="427-01">
+      <ca_band_combo>1A-3A, 1A-7A, 1A-20A, 3A-7A, 3A-20A, 7A-20A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="427-02">
+      <ca_band_combo>1A-3A, 3A-7A, 3A-20A, 7A-20A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-20A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="424-02">
+      <ca_band_combo>1A-3A, 1A-8A, 3A-8A</ca_band_combo>
+      <ca_band_combo>1A-3A-8A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="424-03">
+      <ca_band_combo>1A-3A, 1A-8A, 3A-8A</ca_band_combo>
+      <ca_band_combo>1A-3A-8A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="415-01">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="415-03">
+      <ca_band_combo>1A-3A, 1A-7A, 3A-7A, 7A-28A, 3A-28A</ca_band_combo>
+      <ca_band_combo>1A-3A-7A, 3A-7A-28A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="419-02">
+      <ca_band_combo>1A-3A, 1A-8A, 3A-8A, 3A-40A</ca_band_combo>
+      <ca_band_combo>1A-3A-8A, 1A-3A-40A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="419-03">
+      <ca_band_combo>1A-3A, 3A-7A, 3A-28A, 7A-28A, 3A-41A</ca_band_combo>
+      <ca_band_combo>3A-7A-28A, 3A-7A-41A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="502-13">
+      <ca_band_combo>1A-3A, 1A-5A, 3A-5A, 3A-28A, 5A-28A, 3A-41A</ca_band_combo>
+      <ca_band_combo>1A-3A-5A, 1A-3A-28A, 3A-5A-41A</ca_band_combo>
+    </ca_plmn>
+  </ca_plmn_list>
+</policy>

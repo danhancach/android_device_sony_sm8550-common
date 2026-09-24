@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Carrier Policy for KT (Updated for 2025)
+  Sony Korea User Group (by, Eliza)
+  - Enabled 5G Roaming capabilities.
+  - Added WCDMA for domestic call stability.
+  - General cleanup for readability.
+-->
+<policy name      = "KT"
+        changelist = "$Change: 32887195 $"
+        policy_ver = "125.1.1"
+>
+
+  <initial>
+    <!-- Defines home country MCC as South Korea (450) -->
+    <mcc_list name="home_mccs"> 450 </mcc_list>
+
+    <!-- Defines the default full RAT capability including 5G -->
+    <define_fullrat_config>
+      <rat_capability base="current">
+        <include> 5G </include>
+      </rat_capability>
+    </define_fullrat_config>
+
+    <!-- Sets the device to dual-mode for seamless LTE/5G switching -->
+    <feature single_sim="normal"> dualmmode </feature>
+  </initial>
+
+  <!-- Stop policy execution if the device is not online or location is not available -->
+  <if>
+    <any_of>
+      <not> <phone_operating_mode> ONLINE </phone_operating_mode> </not>
+      <not> <have_location /> </not>
+    </any_of>
+    <then>
+      <stop />
+    </then>
+  </if>
+
+  <!-- Set service mode to FULL once basic conditions are met -->
+  <svc_mode> FULL </svc_mode>
+
+  <!-- Main rule to differentiate between Home and Roaming network capabilities -->
+  <if>
+    <!-- Condition: If the device is in South Korea (Home MCC) -->
+    <cond> <location_mcc_in list="home_mccs" /> </cond>
+    <then>
+      <!-- 
+        [MODIFIED] Added WCDMA for VoLTE fallback and call stability in the domestic network.
+      -->
+      <rat_capability base="none">
+        <include> WCDMA LTE 5G </include>
+      </rat_capability>
+    </then>
+    <!-- Condition: If the device is roaming outside of South Korea -->
+    <else>
+      <!-- 
+        [MODIFIED FOR 2025] 
+        Action: Enable GSM, WCDMA, LTE, and 5G for global roaming.
+        Removed the previous restriction that disabled 5G SA/NSA while roaming.
+      -->
+      <rat_capability base="none">
+        <include> GSM WCDMA LTE 5G </include>
+      </rat_capability>
+    </else>
+  </if>
+
+</policy>
