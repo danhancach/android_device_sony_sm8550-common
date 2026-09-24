@@ -1,0 +1,12 @@
+# IDE / AI tooling
+.cursor/
+.vscode/
+.gitnexus/
+.claude/
+AGENTS.md
+CLAUDE.md
+
+# Tai lieu / patch recovery / stock firmware noi bo
+.docs/
+.patchs/
+.stock-fw/
