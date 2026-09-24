@@ -1,0 +1,2 @@
+# DPM probes framework services it does not use
+dontaudit vendor_dpmd default_android_service:service_manager find;

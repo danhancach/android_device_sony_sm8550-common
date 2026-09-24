@@ -1,0 +1,2 @@
+# Camera HAL probes zygote config props it does not need
+dontaudit hal_camera_default zygote_config_prop:file { getattr open read };

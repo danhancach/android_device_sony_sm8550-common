@@ -1,0 +1,3 @@
+# XTRA uses SoC serial as a device identifier
+# (sysfs_socinfo_sensitive -> vendor_sysfs_soc_sensitive via Lineage M4DEFS)
+allow vendor_location_xtra_daemon sysfs_socinfo_sensitive:file r_file_perms;
