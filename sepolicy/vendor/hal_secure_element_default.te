@@ -1,0 +1,3 @@
+# eSE/NFC stack looks up files under /oem
+allow hal_secure_element_default oemfs:dir r_dir_perms;
+allow hal_secure_element_default oemfs:file r_file_perms;
