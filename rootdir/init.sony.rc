@@ -22,7 +22,17 @@ on boot
     chown system system /sys/devices/virtual/input/lxs_ts_input/enable_knock
     chown system system /sys/devices/dsi_panel_driver/pre_sod_mode
 
+on early-boot
+    # BT A2DP offload: vendor.prop alone is overridden by stale /data/property;
+    # force defaults before audio-hal / bluetooth start.
+    setprop persist.bluetooth.a2dp_offload.disabled false
+    setprop persist.bluetooth.a2dp_aac.vbr_supported true
+
 on early-init
+    # Xperia phones have no hardware nav keys; must be set before system_server
+    # reads DisplayPolicy (qemu.hw.mainkeys empty + missing RRO => no nav bar).
+    setprop qemu.hw.mainkeys 0
+
     # radio
     wait /dev/block/by-name/LTALabel
     exec_start msim_sh
@@ -81,7 +91,24 @@ on property:ro.vendor.ltalabel.model=SO-53D
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
 
 on property:sys.boot_completed=1
-     swapon_all /vendor/etc/fstab.zram
+    swapon_all /vendor/etc/fstab.zram
+    setprop vendor.sony.boot_completed 1
+
+# After audioserver restart, Sony BT offload session (btaudio_offload_if.so) goes
+# stale while A2DP still shows connected. Toggle Bluetooth to re-establish it.
+on property:init.svc.audioserver=stopped && property:vendor.sony.boot_completed=1
+    setprop vendor.sony.bt.refresh_pending 1
+
+on property:init.svc.audioserver=running && property:vendor.sony.bt.refresh_pending=1
+    setprop vendor.sony.bt.refresh_pending 0
+    start bt-refresh-after-audioserver
+
+service bt-refresh-after-audioserver /vendor/bin/bt_refresh_after_audioserver.sh
+    class late_start
+    user system
+    group bluetooth net_bt_admin
+    oneshot
+    disabled
 
 on init
     write /sys/kernel/cnss/recovery 1
