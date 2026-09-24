@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import sys
+from pathlib import Path
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -15,6 +18,12 @@ from extract_utils.fixups_lib import (
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
+)
+
+# SSOT DVS keep-haptic: device/.../audio/patch_libar_pal_dvs_keep_haptic.py
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'audio'))
+from patch_libar_pal_dvs_keep_haptic import (  # noqa: E402
+    blob_fixup_dvs_keep_haptic,
 )
 
 namespace_imports = [
@@ -154,6 +163,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-21.7.so'),
     'vendor/bin/nv_updater': blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+    # Cirrus DVS keep haptic (stream type 22): tbnz -> b @ 0x48b4d0.
+    # SSOT: audio/patch_libar_pal_dvs_keep_haptic.py (idempotent; mismatch -> fail).
+    # Bat buoc: moi lan extract/update blobs phai di qua fixup nay.
+    'vendor/lib64/libar-pal.so': blob_fixup()
+        .call(blob_fixup_dvs_keep_haptic, need_tmp_dir=False),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
