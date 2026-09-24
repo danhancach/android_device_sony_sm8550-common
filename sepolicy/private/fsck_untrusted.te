@@ -1,0 +1,4 @@
+# Cho phep fsck.exfat(.sony) mo /sys/dev/block/MAJ:MIN
+# AOSP dontaudit sysfs:file; coredomain neverallow class do. Chi dir + lnk_file.
+allow fsck_untrusted sysfs:dir r_dir_perms;
+allow fsck_untrusted sysfs:lnk_file r_file_perms;
