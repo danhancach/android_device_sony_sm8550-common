@@ -1,0 +1,94 @@
+Adding Comments LTE RSRQ Src LTE SNR Destination
+Some Comments
+Ignore these comments
+@@@
+# [CRITICAL FIX] Disabled measurement of non-existent 2G and dying 3G networks.
+# This is the most important change to save battery and improve stability in Korea.
+2G3GMeasurementsFeatureEnabled = 0;
+2G3GReselectionTimer = 1;
+# [CRITICAL FIX] Removed this line ("ALGO_FLAVOR = 0;") to allow the carrier's
+# default, optimized algorithm to be used instead of a generic one.
+Alpha_media = 65;
+DISABLE_CS_REPOINT = 1;
+DeltaMediaDLJitterAcceptable = -24;
+DeltaMediaDLQDJSilenceBad = -8;
+DeltaMediaDLQDJSpeechBad = -1;
+DeltaMediaULJitterAcceptable = -24;
+# The following GERAN/WCDMA/UTRAN parameters are now inactive because 2G3GMeasurementsFeatureEnabled is set to 0.
+GERAN_BER_Single_in = 6;
+GERAN_BER_Single_out = 7;
+GERAN_Count_Suspended_State = 10;
+GERAN_RSSI_Single_in = -98;
+GERAN_RSSI_Single_out = -103;
+GERAN_RXLEV_ALPHA = 0.65;
+GERAN_RXQUAL_ALPHA = 0.95;
+GERAN_SNR_ALPHA = 0.65;
+GERAN_SNR_Single_in = 8;
+GERAN_SNR_Single_out = 5;
+GERAN_SRAT_BER_Threshold = 6;
+GERAN_SRAT_RSSI_THRESHOLD = -100;
+GERAN_SRAT_SNR_Threshold = 7;
+GERAN_TRAT_BER_Threshold = 5;
+GERAN_TRAT_RSSI_THRESHOLD = -95;
+GERAN_TRAT_SNR_Threshold = 10;
+GRAN_SamplingTimer = 500;
+LTEDLRSRPThresholdSrcLow = -123;
+LTEDLRSRPThresholdTargetHigh = -115;
+LTEDLRSRQSrcHigh = -110;
+LTEDLRSRQSrcLow = -160;
+LTEDLRSRQTargetHigh = -130;
+LTEDLRSRQTargetLow = -130;
+LTEDLSNRSrcHigh = 100;
+LTEDLSNRSrcLow = 95;
+LTEDLSNRTargetHigh = 105;
+LTEDLSNRTargetLow = 105;
+LTEDLSRATMonitorTime = 2;
+LTEDLTRATMonitorTime = 2;
+LTESuspendedStateCount = 10;
+LTE_RSRP_Single_in = -130;
+LTE_RSRP_Single_out = -140;
+LTE_RSRQ_Single_in = -170;
+LTE_RSRQ_Single_out = -200;
+LTE_SNR_Single_in = 85;
+LTE_SNR_Single_out = 75;
+MediaDL95JitterAcceptable = 60;
+MediaDL95JitterBad = 7;
+MediaDL95JitterFair = 6;
+MediaDL95JitterGood = 4;
+MediaDLFrameLossAcceptable = 3;
+MediaDLFrameLossBad = 50;
+MediaDLFrameLossFair = 20;
+MediaDLFrameLossGood = 5;
+MediaDLJitterAcceptable = 40;
+MediaDLJitterBad = 50;
+MediaDLJitterFair = 40;
+MediaDLJitterGood = 10;
+MediaDLQDJSilenceAcceptable = 16;
+MediaDLQDJSilenceBad = 24;
+MediaDLQDJSpeechAcceptable = 2;
+MediaDLQDJSpeechBad = 3;
+MediaMetricsDisabled = 0;
+MediaTimerInterval = 1;
+MediaULFrameLossAcceptable = 3;
+MediaULFrameLossBad = 50;
+MediaULFrameLossFair = 20;
+MediaULFrameLossGood = 5;
+MediaULJitterAcceptable = 40;
+MediaULJitterBad = 50;
+MediaULJitterFair = 40;
+MediaULJitterGood = 10;
+SingleRatFeatureEnable = 1;
+UTRAN_ECIO_Single_in = -12;
+UTRAN_ECIO_Single_out = -17;
+UTRAN_RSCP_Single_in = -113;
+UTRAN_RSCP_Single_out = -118;
+WCDMA_Count_Suspended_State = 10;
+WCDMA_ECIO_ALPHA = 0.65;
+WCDMA_RSCP_ALPHA = 0.65;
+WCDMA_SRAT_ECIO_Threshold = -15;
+WCDMA_SRAT_RSCP_Threshold = -115;
+WCDMA_SamplingTimer = 500;
+WCDMA_TRAT_ECIO_Threshold = -10;
+WCDMA_TRAT_RSCP_Threshold = -110;
+monitor2GTimeInSec = 2;
+monitor3GTimeInSec = 2;

@@ -1,0 +1,70 @@
+# [MODIFIED] Audio codec updated to prioritize EVS for higher quality VoLTE calls.
+# [MODIFIED] Video codec profile simplified to the modern H.264 standard.
+[QIPCALL:ImsMediaProfileConfig]
+*AudioProfile1 = "EVS_0;AMR_4_100;AMR_2_98"
+VideoProfile1 = "H264_1;H264_0"
+
+[QIPCALL:ImsRtcpConfig]
+*rtcpLinkAlivenessTimer = 0
+*rtcpReportingIntervalInVideo = 1
+
+[QIPCALL:ImsVideoConfig]
+*vtImpactedByMobileData = 0
+
+[QIPCALL:ImsVoWifiConfig]
+*wifiConnectivityBackoffTimer = 10
+
+[QIPCALL:ImsVoiceConfig]
+*emergCallCSOnly = 0
+*privacyType = 2
+*uriType = 1
+
+[QIPCALL:ImsVoiceQoSConfig]
+*localQosResReqAudio = 0
+*qosPreconditionsEnabled = 0
+
+[QIPCALL:ImsVoiceSessionTimerConfig]
+*sessionTimerEnabled = 1
+
+[QIPCALL:ImsVoiceSrvccConfig]
+*aSrvccEnabled = 0
+*bSrvccEnabled = 0
+*midcallSrvccEnabled = 0
+
+[QIPCALL:ImsVoiceSuppsConfig]
+*confEvtSubOutOfDialog = 0
+
+# [ADDED] Disabled scanning for non-existent 2G/3G networks to save battery and improve network acquisition speed.
+[Registration:RegistrationSettings]
+*enableRegistrationInLPM = 0
+*2G3GMeasurementsFeatureEnabled = 0
+
+[Registration:RegistrationTimers]
+*pdnRetryLongTimer = 5
+*wlanGaurdTimer = 30
+*wwanGaurdTimer = 30
+
+[SIPConfig:FeatureFlags]
+*IsRouteHeaderEnabled = 0
+
+[MEDIA:MediaCommon]
+#This config is DL DTMF Mode.
+#enum -
+#QP_DTMF_PB_NONE = 0,
+#QP_DTMF_PB_ADSP = 1,
+#QP_DTMF_PB_HLOS = 2,
+#QP_DTMF_PB_ADSP_HLOS = 3,
+#QP_DTMF_PB_MAX
+
+*DLDtmfMode = 1
+
+[SIPConfig:IPSec]
+*EncAlgo = 2
+*IntScheme = 1
+
+[SIPConfig:Transport]
+*TCPThresholdValue = 0
+
+[Ut:UtConfiguration]
+*maxResponseTimerValue = 10
+*pdnHysTimerValue = 5

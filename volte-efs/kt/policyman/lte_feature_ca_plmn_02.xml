@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy name="ca_plmn_list_americas" schema_ver="1" policy_ver="44.2.7">
+  <!-- 
+    [PLMN-level LTE CA Combinations for Americas]
+    This file defines LTE CA combos specific to PLMNs in the Americas.
+    - Validated against spectrum allocations in band_set_01.xml for 2025.
+    - Corrected PLMN 310-012 (Verizon) and added 310-260 (T-Mobile).
+    - Moved Asian PLMNs (440-10, 440-20, 466-92, 454-00) to lte_feature_ca_plmn_01.xml or lte_feature_ca_plmn_04.xml.
+  -->
+  <ca_plmn_list ns="global" name="plmn_ca_02">
+    <ca_plmn plmn="310-410">
+      <ca_band_combo>2A-4A, 2A-5A, 2A-12A, 2A-30A, 2A-66A, 4A-5A, 4A-12A, 5A-30A, 5A-66A, 12A-30A, 12A-66A, 14A-30A, 14A-66A, 29A-66A</ca_band_combo>
+      <ca_band_combo>2A-4A-12A, 2A-12A-30A, 2A-12A-66A, 4A-12A-66A, 2A-5A-30A</ca_band_combo>
+      <ca_band_combo>2A-4A-12A-30A, 2A-12A-66C, 2A-14A-66C</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="310-004">
+      <ca_band_combo>5A-13A, 5A-66A, 13A-66A</ca_band_combo>
+      <ca_band_combo>66C, 5A-66C, 13A-66C</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="310-012">
+      <ca_band_combo>5A-13A, 5A-66A, 13A-66A</ca_band_combo>
+      <ca_band_combo>66C, 5A-66C, 13A-66C</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="310-260">
+      <ca_band_combo>2A-4A, 2A-12A, 2A-66A, 2A-71A, 4A-12A, 4A-71A, 12A-66A, 12A-71A, 66A-71A</ca_band_combo>
+      <ca_band_combo>66C, 2A-66C, 12A-66C</ca_band_combo>
+      <ca_band_combo>2A-12A-66A, 2A-66A-71A, 12A-66A-71A</ca_band_combo>
+      <ca_band_combo>2A-12A-66A-71A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="310-150">
+      <ca_band_combo>26A-66A, 26A-71A, 66A-70A, 66A-71A, 29A-66A</ca_band_combo>
+      <ca_band_combo>26A-66A-70A, 29A-66A-70A, 66A-70A-71A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="302-720">
+      <ca_band_combo>2A-4A, 2A-7A, 4A-7A, 4A-12A, 7A-12A, 7A-13A</ca_band_combo>
+      <ca_band_combo>2A-4A-7A, 4A-7A-12A, 2A-7A-12A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="302-610">
+      <ca_band_combo>2A-4A, 2A-7A, 4A-7A, 4A-12A, 7A-12A, 4A-66A</ca_band_combo>
+      <ca_band_combo>2A-4A-7A, 4A-7A-12A, 4A-7A-66A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="302-620">
+      <ca_band_combo>2A-7A, 4A-7A, 7A-12A, 66A-7A</ca_band_combo>
+      <ca_band_combo>2A-7A-12A, 4A-7A-12A</ca_band_combo>
+    </ca_plmn>
+    <ca_plmn plmn="724-06">
+      <ca_band_combo>3A-7A, 3A-28A, 7A-28A</ca_band_combo>
+      <ca_band_combo>3A-7A-28A</ca_band_combo>
+    </ca_plmn>
+  </ca_plmn_list>
+</policy>
