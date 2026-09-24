@@ -31,6 +31,20 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.sony-360ra.rc",
+    src: "init.sony-360ra.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.volte-kt.rc",
+    src: "init.volte-kt.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "init.qcom.rc",
     sub_dir: "init/hw",
@@ -105,5 +119,17 @@ sh_binary {
 sh_binary {
     name: "init.kernel.post_boot-kalama.sh",
     src: "init.kernel.post_boot-kalama.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "reload_cirrus_amp.sh",
+    src: "bin/reload_cirrus_amp.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "bt_refresh_after_audioserver.sh",
+    src: "bin/bt_refresh_after_audioserver.sh",
     vendor: true,
 }
