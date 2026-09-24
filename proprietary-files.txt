@@ -134,7 +134,8 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.kalama.so
+# audio.primary.kalama.so — khong extract/ship; SSOT CAF fork danhancach (build tu source)
+# prebuilt vendor Android.bp: enabled:false tranh dung binary stock
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libEvrcSwCodec.so
