@@ -77,8 +77,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <attachedDevices>
                 <item>Earpiece</item>
                 <item>Speaker</item>
-                <!-- Bo Speaker Safe: ringtone/haptic di SPEAKER (dual loa + volume dung).
-                     SPEAKER_SAFE gay G=-inf va chi 1 loa tren pdx237. -->
+                <!-- Stock: SONIFICATION (ringtone/alarm/notif) → SPEAKER_SAFE; MEDIA → SPEAKER.
+                     HAL set custom_key=speaker-safe (primary-hal); haptic van deep-buffer + strip ch. -->
+                <item>Speaker Safe</item>
                 <item>Telephony Tx</item>
                 <item>Built-In Mic Bottom</item>
                 <item>Built-In Mic Top</item>
@@ -114,6 +115,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     <profile name="" format="AUDIO_FORMAT_PCM_32_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                     -->
+                </mixPort>
+                <!-- Sonification tren SPEAKER_SAFE: deep-buffer rieng (tranh PRIMARY/FAST lech L/R).
+                     Tach khoi deep_buffer MEDIA tren SPEAKER — khong chia HAL stream / custom_key. -->
+                <mixPort name="speaker_safe_out" role="source"
+                        flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -492,7 +500,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <route type="mix" sink="Speaker"
                        sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output,spatial output,hires_48kHz_float"/>
                 <route type="mix" sink="Speaker Safe"
-                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output,spatial output"/>
+                       sources="speaker_safe_out,haptics output"/>
                 <route type="mix" sink="Wired Headset"
                        sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,mmap_no_irq_out,haptics output,spatial output,hires_48kHz_float,hires_96kHz_float,hires_192kHz_float"/>
                 <route type="mix" sink="Wired Headphones"
