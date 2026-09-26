@@ -948,6 +948,11 @@
     <path name="bt-ble-mic">
     </path>
 
+    <!-- Sony MI2S EC (PAL_DEVICE_IN_EXT_EC_REF): ten path can ton tai cho
+         audio_route; de trong (stock qrd cung khong co ctl CODEC_DMA). -->
+    <path name="ext_ec_ref_tx">
+    </path>
+
     <path name="va-mic-mono">
         <ctl name="VA_AIF1_CAP Mixer DEC0" value="1" />
         <ctl name="VA DEC0 MUX" value="MSM_DMIC" />
