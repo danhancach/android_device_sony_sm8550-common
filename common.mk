@@ -513,5 +513,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy
 
+# Codec2 VPP: giu filter/blob stock; chi override qconfig (truoc vendor inherit).
+# Stock aie=MANUAL+AIE_AUTO gay VPP_ERR_INVALID_CFG (pstVppUsecase_Find NULL)
+# tren A17 -> can graphic buffer / lag short-form video. HQV/AIE OFF = an toan.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/qconfigpresets.json:$(TARGET_COPY_OUT_VENDOR)/etc/qconfigpresets.json
+
 # Vendor blobs
 $(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
