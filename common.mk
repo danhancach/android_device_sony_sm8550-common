@@ -519,5 +519,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/qconfigpresets.json:$(TARGET_COPY_OUT_VENDOR)/etc/qconfigpresets.json
 
+# QTI Perf soft-hint: override stock perfboostsconfig (truoc vendor inherit de dest wins)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml
+
 # Vendor blobs
 $(call inherit-product, vendor/sony/sm8550-common/sm8550-common-vendor.mk)
