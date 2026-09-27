@@ -27,12 +27,12 @@ AB_OTA_PARTITIONS += \
     vendor_dlkm \
     vendor_boot
 
-# Architecture
+# Architecture — SM8550 ARMv9-A (khong SVE); compile generic; ART cortex-a510
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
+TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+TARGET_CPU_VARIANT_RUNTIME := cortex-a510
 
 # Boot
 BOARD_BOOT_HEADER_VERSION := 4
