@@ -187,6 +187,8 @@ persist.sys.fuse.passthrough.enable=true
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
+# SF phase ~16.6/15.6ms (stock). Khong dung 8.3ms: All Apps NexusLauncher
+# miss deadline ~21% jank @120Hz; 16.6ms keo jank ve ~0.4% va van adaptive RR.
 debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=16666666
 debug.sf.early.sf.duration=15666666
