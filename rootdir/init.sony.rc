@@ -23,6 +23,9 @@ on boot
     chown system system /sys/devices/dsi_panel_driver/pre_sod_mode
 
 on early-boot
+    # Heuristic content <60fps khong score panel >=120.
+    setprop debug.sf.frame_rate_multiple_threshold 120
+    setprop debug.sf.frame_rate_category_mrr true
     # BT A2DP offload: vendor.prop alone is overridden by stale /data/property;
     # force defaults before audio-hal / bluetooth start.
     setprop persist.bluetooth.a2dp_offload.disabled false

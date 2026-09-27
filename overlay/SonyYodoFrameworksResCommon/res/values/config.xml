@@ -535,7 +535,8 @@
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
          If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <!-- 60: low-brightness zone khong ep peak 120 (tiet kiem + it mode-switch) -->
+    <integer name="config_defaultRefreshRateInZone">60</integer>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps">true</bool>
