@@ -11,6 +11,9 @@
   Overlay soft-hint QTI: Pixel INTERACTION/LAUNCH-like (cua so ngan,
   little-biased, bus vua). Soft 0x1081 Type1 + 0x1080 Type1/4/5/6/7.
   Giu Id/Type/Fps. Tham chieu: lynx powerhint.json.
+  Do Energy/task P0/P3/P7 (battery integral, 2026-09-28): P7 min launch
+  1478MHz (CV~4%); P3 giu ~1200 (diem tin cay); P0 giu 1400. Khong pin
+  P7/P3 len max — Energy/task va EDP xau hon khi CV cao.
 -->
 
 <!--Ids are used in identifying the boosts, increment ids linearly,
@@ -37,11 +40,11 @@
         <!-- GPU DISABLE resource opcode, value-->
         <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
 
-        <!-- Type="1", launch soft-hint ~1s; max uncapped; min little-biased; bus vua -->
+        <!-- Type="1", launch ~1s; BIG min 1200, LITTLE 1400, PRIME 1478 (Energy/task P7) -->
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="1000" Target="kalama"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0x4B0, 0x40800100, 0x578, 0x40800200, 0x386, 0x41848000, 0x927C0,
+                       0x40800000, 0x4B0, 0x40800100, 0x578, 0x40800200, 0x5C6, 0x41848000, 0x927C0,
                        0x41844000, 0x927C0, 0x42C10000, 0x1, 0x43460000, 0x401640,
                        0x43458000, 0xD2F00, 0x4281C000, 2000, 0x4100C000, 0x1" />
 
@@ -172,7 +175,7 @@
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="kalama"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+                       0x40800000, 0x492, 0x40800100, 0x5B4, 0x40800200, 0x5C6" />
 
     <!--Vertical Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -382,7 +385,7 @@
         <Config
             Id="0x00001088" Enable="true" Target="kalama"
             Resources="0x40C00000, 0x2, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0,
+                       0x40800000, 0x492, 0x40800100, 0x5B4, 0x40800200, 0x5C6, 0x40CA0000, 0,
                        0x40CCC000, 0" />
 
     <!--Rotation latency boost-->
@@ -398,7 +401,7 @@
         <Config
             Id="0x00001089" Enable="true" Timeout="1500" Target="kalama"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF" />
+                       0x40800000, 0x492, 0x40800100, 0x5B4, 0x40800200, 0x5C6" />
 
     <!--Rotation animation boost-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
