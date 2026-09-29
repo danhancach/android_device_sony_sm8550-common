@@ -522,15 +522,16 @@
          A negative brightness or lux value means that only one threshold should be used - e.g. if
          the brightness value is negative, only the lux threshold is applied. -->
     <!-- Low zone brightness thresholds in the range [0, 255] -->
+    <!-- Nguong cuoi: brightness 1/2, lux 3; chi ep 60Hz khi sang rat thap -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>6</item>
-        <item>12</item>
+        <item>1</item>
+        <item>2</item>
     </integer-array>
 
     <!-- Low zone lux thresholds -->
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
         <item>-1</item>
-        <item>20</item>
+        <item>3</item>
     </integer-array>
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
