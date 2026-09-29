@@ -51,7 +51,11 @@
 
 #define VOLTE_EFS_SRC "/vendor/etc/volte-efs/kt"
 #define VOLTE_KT_STAMP "/data/vendor/misc/volte_kt_efs.stamp"
-#define VOLTE_KT_STAMP_VERSION "1"
+#define VOLTE_KT_STAMP_VERSION "2"
+
+/* Retry install khi diag/EFS chua san sang luc boot */
+#define INSTALL_MAX_TRIES 10
+#define INSTALL_RETRY_SLEEP_SEC 2
 
 #define CALLBACK_MODE 6
 #define DIAG_PROC_MSM 0
@@ -613,6 +617,15 @@ static void diag_cleanup(void) {
     if (g_libdiag)
         dlclose(g_libdiag);
     g_libdiag = NULL;
+    g_diag_init = NULL;
+    g_diag_deinit = NULL;
+    g_diag_send = NULL;
+    g_diag_register = NULL;
+    g_diag_pkt_init = NULL;
+    g_diag_switch_logging = NULL;
+    g_diag_callback_send = NULL;
+    g_diagpkt_subsys_alloc = NULL;
+    g_diagpkt_commit = NULL;
 }
 
 static void usage(const char *prog) {
@@ -634,12 +647,8 @@ static int cmd_probe(void) {
     return 0;
 }
 
-static int cmd_install(void) {
-    if (stamp_matches()) {
-        ALOGI("KT EFS already provisioned (stamp %s)", VOLTE_KT_STAMP_VERSION);
-        return 0;
-    }
-
+/* Upload 2 lan + ghi stamp khi thanh cong. Goi khi diag/EFS da san sang. */
+static int cmd_install_upload(void) {
     ALOGI("provisioning KT VoLTE EFS from %s", VOLTE_EFS_SRC);
 
     int rc = cmd_upload_tree(VOLTE_EFS_SRC);
@@ -662,6 +671,41 @@ static int cmd_install(void) {
     return 0;
 }
 
+/*
+ * install: retry diag_load + efs_wait_ready + upload khi modem chua san.
+ * Chi write_stamp khi upload thanh cong (trong cmd_install_upload).
+ */
+static int cmd_install(void) {
+    if (stamp_matches()) {
+        ALOGI("KT EFS already provisioned (stamp %s)", VOLTE_KT_STAMP_VERSION);
+        return 0;
+    }
+
+    for (int attempt = 1; attempt <= INSTALL_MAX_TRIES; attempt++) {
+        ALOGI("KT EFS install attempt %d/%d", attempt, INSTALL_MAX_TRIES);
+
+        int ok = 0;
+        if (diag_load_libdiag() < 0) {
+            ALOGW("diag_load failed (attempt %d/%d)", attempt, INSTALL_MAX_TRIES);
+        } else if (efs_wait_ready() < 0) {
+            ALOGW("efs_wait_ready failed (attempt %d/%d)", attempt, INSTALL_MAX_TRIES);
+        } else if (cmd_install_upload() == 0) {
+            ok = 1;
+        } else {
+            ALOGW("upload failed (attempt %d/%d)", attempt, INSTALL_MAX_TRIES);
+        }
+
+        diag_cleanup();
+        if (ok)
+            return 0;
+        if (attempt < INSTALL_MAX_TRIES)
+            sleep(INSTALL_RETRY_SLEEP_SEC);
+    }
+
+    ALOGE("KT EFS install failed after %d attempts", INSTALL_MAX_TRIES);
+    return 1;
+}
+
 int main(int argc, char **argv) {
     if (argc < 2) {
         usage(argv[0]);
@@ -670,6 +714,10 @@ int main(int argc, char **argv) {
 
     if (getuid() != 0)
         ALOGW("not running as root");
+
+    /* install tu quan ly load/retry/cleanup; khong load diag o day */
+    if (!strcmp(argv[1], "install"))
+        return cmd_install();
 
     if (diag_load_libdiag() < 0)
         return 1;
@@ -683,8 +731,6 @@ int main(int argc, char **argv) {
     int rc = 1;
     if (!strcmp(argv[1], "probe")) {
         rc = cmd_probe();
-    } else if (!strcmp(argv[1], "install")) {
-        rc = cmd_install();
     } else if (!strcmp(argv[1], "upload") && argc >= 3) {
         if (cmd_probe() != 0) {
             ALOGE("probe failed before upload");
