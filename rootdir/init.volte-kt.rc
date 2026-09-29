@@ -7,6 +7,9 @@ on property:init.svc.vendor.diag-router=running
     setprop persist.dbg.wfc_avail_ovr 1
     setprop persist.vendor.radio.enhanced_4g_lte_on 1
     setprop persist.vendor.radio.volte_vt_enabled 1
+
+# Start EFS loader sau boot_completed (diag/modem on dinh hon)
+on property:sys.boot_completed=1
     start volte_kt_efs
 
 service volte_kt_efs /vendor/bin/efs_kt_loader install
