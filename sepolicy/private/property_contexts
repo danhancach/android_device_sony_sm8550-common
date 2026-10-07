@@ -1,3 +1,6 @@
+# SF touchControl hold (vendor.prop ro.surface_flinger.set_touch_control_timer_ms)
+ro.surface_flinger.set_touch_control_timer_ms u:object_r:surfaceflinger_prop:s0 exact int
+
 # Bluetooth A2DP AAC offload (init.sony.rc)
 persist.bluetooth.a2dp_aac.vbr_supported u:object_r:bluetooth_a2dp_offload_prop:s0 exact bool
 
