@@ -51,7 +51,8 @@
 
 #define VOLTE_EFS_SRC "/vendor/etc/volte-efs/kt"
 #define VOLTE_KT_STAMP "/data/vendor/misc/volte_kt_efs.stamp"
-#define VOLTE_KT_STAMP_VERSION "2"
+/* 3: global RF/5G band_set + plmn (XDA delta merge 2026-10) */
+#define VOLTE_KT_STAMP_VERSION "3"
 
 /* Retry install khi diag/EFS chua san sang luc boot */
 #define INSTALL_MAX_TRIES 10

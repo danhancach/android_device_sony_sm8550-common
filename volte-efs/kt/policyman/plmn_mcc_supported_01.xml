@@ -60,13 +60,60 @@
     <mcc>655</mcc>
     <mcc>722</mcc>
     <mcc>724</mcc>
+    <mcc>202</mcc>
+    <mcc>204</mcc>
+    <mcc>206</mcc>
+    <mcc>208</mcc>
+    <mcc>212</mcc>
+    <mcc>213</mcc>
+    <mcc>214</mcc>
+    <mcc>218</mcc>
+    <mcc>219</mcc>
+    <mcc>221</mcc>
+    <mcc>225</mcc>
+    <mcc>226</mcc>
+    <mcc>228</mcc>
+    <mcc>230</mcc>
+    <mcc>232</mcc>
+    <mcc>235</mcc>
+    <mcc>238</mcc>
+    <mcc>240</mcc>
+    <mcc>242</mcc>
+    <mcc>244</mcc>
+    <mcc>246</mcc>
+    <mcc>247</mcc>
+    <mcc>248</mcc>
+    <mcc>266</mcc>
+    <mcc>270</mcc>
+    <mcc>272</mcc>
+    <mcc>274</mcc>
+    <mcc>276</mcc>
+    <mcc>278</mcc>
+    <mcc>280</mcc>
+    <mcc>284</mcc>
+    <mcc>288</mcc>
+    <mcc>289</mcc>
+    <mcc>292</mcc>
+    <mcc>294</mcc>
+    <mcc>295</mcc>
+    <mcc>297</mcc>
+    <mcc>422</mcc>
+    <mcc>426</mcc>
+    <mcc>436</mcc>
+    <mcc>437</mcc>
+    <mcc>438</mcc>
+    <mcc>456</mcc>
+    <mcc>457</mcc>
+    <mcc>528</mcc>
+    <mcc>604</mcc>
   </supported_mcc_list>
   <supported_plmn_list ns="global">
     <region name="south_korea">
       <plmn mcc="450" mnc="05"/>
       <plmn mcc="450" mnc="06"/>
       <plmn mcc="450" mnc="08"/>
-    </region>
+          <plmn mcc="450" mnc="11"/>
+</region>
     <region name="russia">
       <plmn mcc="250" mnc="01"/>
       <plmn mcc="250" mnc="02"/>
@@ -79,7 +126,21 @@
       <plmn mcc="310" mnc="410"/>
       <plmn mcc="311" mnc="480"/> <!-- Added Verizon -->
       <plmn mcc="311" mnc="490"/> <!-- C Spire -->
-    </region>
+          <plmn mcc="310" mnc="070"/>
+      <plmn mcc="310" mnc="080"/>
+      <plmn mcc="310" mnc="380"/>
+      <plmn mcc="310" mnc="560"/>
+      <plmn mcc="310" mnc="160"/>
+      <plmn mcc="310" mnc="200"/>
+      <plmn mcc="310" mnc="210"/>
+      <plmn mcc="310" mnc="220"/>
+      <plmn mcc="310" mnc="230"/>
+      <plmn mcc="310" mnc="240"/>
+      <plmn mcc="310" mnc="250"/>
+      <plmn mcc="310" mnc="270"/>
+      <plmn mcc="311" mnc="481"/>
+      <plmn mcc="310" mnc="010"/>
+</region>
     <region name="australia">
       <plmn mcc="505" mnc="01"/>
       <plmn mcc="505" mnc="02"/>
@@ -96,7 +157,8 @@
       <plmn mcc="460" mnc="08"/>
       <plmn mcc="460" mnc="09"/>
       <plmn mcc="460" mnc="11"/>
-    </region>
+          <plmn mcc="460" mnc="15"/>
+</region>
     <region name="hong_kong">
       <plmn mcc="454" mnc="03"/>
       <plmn mcc="454" mnc="04"/>
@@ -191,7 +253,8 @@
     <region name="kuwait">
       <plmn mcc="419" mnc="02"/>
       <plmn mcc="419" mnc="03"/>
-    </region>
+          <plmn mcc="419" mnc="04"/>
+</region>
     <region name="nigeria">
       <plmn mcc="621" mnc="20"/>
       <plmn mcc="621" mnc="30"/>
@@ -211,24 +274,36 @@
       <plmn mcc="655" mnc="01"/>
       <plmn mcc="655" mnc="07"/>
       <plmn mcc="655" mnc="10"/>
-    </region>
+          <plmn mcc="655" mnc="12"/>
+      <plmn mcc="655" mnc="02"/>
+      <plmn mcc="655" mnc="05"/>
+      <plmn mcc="655" mnc="19"/>
+      <plmn mcc="655" mnc="38"/>
+</region>
     <region name="mongolia">
       <plmn mcc="428" mnc="88"/>
       <plmn mcc="428" mnc="91"/>
       <plmn mcc="428" mnc="98"/>
       <plmn mcc="428" mnc="99"/>
-    </region>
+          <plmn mcc="428" mnc="00"/>
+</region>
     <region name="kazakhstan">
       <plmn mcc="401" mnc="01"/>
       <plmn mcc="401" mnc="02"/>
       <plmn mcc="401" mnc="77"/>
-    </region>
+          <plmn mcc="401" mnc="07"/>
+      <plmn mcc="401" mnc="08"/>
+</region>
     <region name="uzbekistan">
       <plmn mcc="434" mnc="01"/>
       <plmn mcc="434" mnc="04"/>
       <plmn mcc="434" mnc="05"/>
       <plmn mcc="434" mnc="07"/>
-    </region>
+          <plmn mcc="434" mnc="08"/>
+      <plmn mcc="434" mnc="03"/>
+      <plmn mcc="434" mnc="06"/>
+      <plmn mcc="434" mnc="09"/>
+</region>
     <region name="singapore">
       <plmn mcc="525" mnc="01"/>
       <plmn mcc="525" mnc="02"/>
@@ -244,22 +319,29 @@
       <plmn mcc="502" mnc="13"/>
       <plmn mcc="502" mnc="16"/>
       <plmn mcc="502" mnc="19"/>
-    </region>
+          <plmn mcc="502" mnc="12"/>
+      <plmn mcc="502" mnc="18"/>
+      <plmn mcc="502" mnc="11"/>
+</region>
     <region name="thailand">
       <plmn mcc="520" mnc="01"/>
       <plmn mcc="520" mnc="04"/>
       <plmn mcc="520" mnc="05"/>
-    </region>
+          <plmn mcc="520" mnc="18"/>
+</region>
     <region name="philippines">
       <plmn mcc="515" mnc="02"/>
       <plmn mcc="515" mnc="03"/>
-    </region>
+          <plmn mcc="515" mnc="66"/>
+</region>
     <region name="indonesia">
       <plmn mcc="510" mnc="01"/>
       <plmn mcc="510" mnc="11"/>
       <plmn mcc="510" mnc="21"/>
       <plmn mcc="510" mnc="89"/>
-    </region>
+          <plmn mcc="510" mnc="10"/>
+      <plmn mcc="510" mnc="09"/>
+</region>
     <region name="india">
       <plmn mcc="404" mnc="02"/> <!-- Bharti Airtel -->
       <plmn mcc="404" mnc="03"/> <!-- Bharti Airtel -->
@@ -285,7 +367,8 @@
       <plmn mcc="414" mnc="01"/>
       <plmn mcc="414" mnc="05"/>
       <plmn mcc="414" mnc="06"/>
-    </region>
+          <plmn mcc="414" mnc="09"/>
+</region>
     <region name="bangladesh">
       <plmn mcc="470" mnc="01"/>
       <plmn mcc="470" mnc="02"/>
@@ -308,11 +391,136 @@
       <plmn mcc="440" mnc="10"/>
       <plmn mcc="440" mnc="20"/>
       <plmn mcc="440" mnc="50"/>
-    </region>
+          <plmn mcc="440" mnc="11"/>
+      <plmn mcc="440" mnc="12"/>
+      <plmn mcc="440" mnc="13"/>
+      <plmn mcc="440" mnc="51"/>
+      <plmn mcc="440" mnc="52"/>
+      <plmn mcc="440" mnc="53"/>
+      <plmn mcc="440" mnc="54"/>
+      <plmn mcc="440" mnc="70"/>
+      <plmn mcc="440" mnc="71"/>
+      <plmn mcc="440" mnc="72"/>
+      <plmn mcc="440" mnc="73"/>
+      <plmn mcc="440" mnc="74"/>
+      <plmn mcc="440" mnc="30"/>
+      <plmn mcc="440" mnc="31"/>
+      <plmn mcc="440" mnc="32"/>
+      <plmn mcc="440" mnc="40"/>
+      <plmn mcc="440" mnc="41"/>
+      <plmn mcc="440" mnc="42"/>
+      <plmn mcc="440" mnc="88"/>
+      <plmn mcc="440" mnc="89"/>
+      <plmn mcc="441" mnc="10"/>
+      <plmn mcc="441" mnc="11"/>
+      <plmn mcc="441" mnc="12"/>
+      <plmn mcc="441" mnc="13"/>
+      <plmn mcc="441" mnc="14"/>
+      <plmn mcc="441" mnc="15"/>
+      <plmn mcc="441" mnc="16"/>
+</region>
     <region name="taiwan">
       <plmn mcc="466" mnc="01"/>
       <plmn mcc="466" mnc="92"/>
       <plmn mcc="466" mnc="97"/>
     </region>
+    <region name="cambodia">
+          <plmn mcc="456" mnc="01"/>
+      <plmn mcc="456" mnc="02"/>
+      <plmn mcc="456" mnc="08"/>
+</region>
+    <region name="laos">
+          <plmn mcc="457" mnc="08"/>
+      <plmn mcc="457" mnc="01"/>
+      <plmn mcc="457" mnc="02"/>
+</region>
+    <region name="brunei">
+          <plmn mcc="528" mnc="11"/>
+      <plmn mcc="528" mnc="02"/>
+</region>
+    <region name="kyrgyzstan">
+          <plmn mcc="437" mnc="01"/>
+      <plmn mcc="437" mnc="05"/>
+      <plmn mcc="437" mnc="09"/>
+</region>
+    <region name="tajikistan">
+          <plmn mcc="436" mnc="01"/>
+      <plmn mcc="436" mnc="02"/>
+      <plmn mcc="436" mnc="12"/>
+      <plmn mcc="436" mnc="03"/>
+      <plmn mcc="436" mnc="04"/>
+      <plmn mcc="436" mnc="10"/>
+      <plmn mcc="436" mnc="05"/>
+</region>
+    <region name="turkmenistan">
+          <plmn mcc="438" mnc="02"/>
+      <plmn mcc="438" mnc="01"/>
+      <plmn mcc="438" mnc="03"/>
+</region>
+    <region name="united_kingdom">
+          <plmn mcc="234" mnc="30"/>
+      <plmn mcc="234" mnc="31"/>
+      <plmn mcc="234" mnc="32"/>
+      <plmn mcc="234" mnc="33"/>
+      <plmn mcc="234" mnc="34"/>
+      <plmn mcc="234" mnc="10"/>
+      <plmn mcc="234" mnc="11"/>
+      <plmn mcc="234" mnc="02"/>
+      <plmn mcc="234" mnc="15"/>
+      <plmn mcc="234" mnc="07"/>
+      <plmn mcc="234" mnc="09"/>
+      <plmn mcc="234" mnc="20"/>
+      <plmn mcc="235" mnc="94"/>
+</region>
+    <region name="germany">
+          <plmn mcc="262" mnc="01"/>
+      <plmn mcc="262" mnc="06"/>
+      <plmn mcc="262" mnc="78"/>
+      <plmn mcc="262" mnc="02"/>
+      <plmn mcc="262" mnc="09"/>
+      <plmn mcc="262" mnc="04"/>
+      <plmn mcc="262" mnc="07"/>
+      <plmn mcc="262" mnc="03"/>
+      <plmn mcc="262" mnc="05"/>
+      <plmn mcc="262" mnc="08"/>
+      <plmn mcc="262" mnc="11"/>
+      <plmn mcc="262" mnc="17"/>
+      <plmn mcc="262" mnc="77"/>
+</region>
+    <region name="france">
+          <plmn mcc="208" mnc="01"/>
+      <plmn mcc="208" mnc="02"/>
+      <plmn mcc="208" mnc="91"/>
+      <plmn mcc="208" mnc="10"/>
+      <plmn mcc="208" mnc="09"/>
+      <plmn mcc="208" mnc="13"/>
+      <plmn mcc="208" mnc="20"/>
+      <plmn mcc="208" mnc="88"/>
+      <plmn mcc="208" mnc="21"/>
+      <plmn mcc="208" mnc="15"/>
+      <plmn mcc="208" mnc="16"/>
+      <plmn mcc="208" mnc="35"/>
+      <plmn mcc="208" mnc="36"/>
+</region>
+    <region name="bahrain">
+          <plmn mcc="426" mnc="01"/>
+      <plmn mcc="426" mnc="05"/>
+      <plmn mcc="426" mnc="02"/>
+      <plmn mcc="426" mnc="04"/>
+      <plmn mcc="426" mnc="06"/>
+</region>
+    <region name="oman">
+          <plmn mcc="422" mnc="02"/>
+      <plmn mcc="422" mnc="04"/>
+      <plmn mcc="422" mnc="03"/>
+      <plmn mcc="422" mnc="06"/>
+</region>
+    <region name="morocco">
+          <plmn mcc="604" mnc="01"/>
+      <plmn mcc="604" mnc="06"/>
+      <plmn mcc="604" mnc="00"/>
+      <plmn mcc="604" mnc="02"/>
+      <plmn mcc="604" mnc="05"/>
+</region>
   </supported_plmn_list>
 </global_network_config>

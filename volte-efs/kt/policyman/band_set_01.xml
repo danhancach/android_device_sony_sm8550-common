@@ -6,10 +6,10 @@
       <lte_bands base="hardware"/>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 1 2 3 4 5 6 7 19 20 24 25 26 27 28 29 31 39 40 65 69 70 76 77</include>
+        <include>0 1 2 3 4 5 6 7 19 20 24 25 26 27 28 29 31 39 40 65 69 70 76 77 78</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 2 3 4 5 6 7 19 20 24 25 26 27 28 29 31 39 40 65 69 70 76 77</include>
+        <include>0 1 2 3 4 5 6 7 19 20 24 25 26 27 28 29 31 39 40 65 69 70 76 77 78</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none"/>
     </rf_band_list>
@@ -40,14 +40,14 @@
     <rf_band_list ns="global" name="sk_telecom_kr_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 4 6</include>
+        <include>0 2 4 6 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>76 77</include>
+        <include>0 2 27 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>76 77</include>
+        <include>0 2 27 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -55,14 +55,14 @@
     <rf_band_list ns="global" name="kt_kr_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7</include>
+        <include>0 2 4 6 7 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>76 77</include>
+        <include>0 2 27 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>76 77</include>
+        <include>0 2 27 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -70,14 +70,14 @@
     <rf_band_list ns="global" name="lg_uplus_kr_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 4 6 7</include>
+        <include>0 4 6 7 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>76 77</include>
+        <include>0 27 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>76 77</include>
+        <include>0 27 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -137,7 +137,7 @@
         <include>24 40 65 70 76</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>24 40 65 70 76</include>
+        <include>1 24 40 65 70 76</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -149,10 +149,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>1 4 65 76</include>
+        <include>1 4 65 70 76 259 260</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>1 4 65 76</include>
+        <include>1 4 65 70 76 259 260</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -720,14 +720,14 @@
     <rf_band_list ns="global" name="stc_sa_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7 27 37 39</include>
+        <include>0 2 7 19 27 37 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -735,14 +735,14 @@
     <rf_band_list ns="global" name="mobily_sa_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7 37</include>
+        <include>0 2 7 19 27 37</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -750,14 +750,14 @@
     <rf_band_list ns="global" name="zain_sa_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7</include>
+        <include>0 2 7 19 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -772,7 +772,7 @@
         <include>77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -780,14 +780,14 @@
     <rf_band_list ns="global" name="vodafone_qa_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>2 6 7 19</include>
+        <include>2 6 7 19 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
         <include>77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -799,10 +799,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>40 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>2 6 40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -814,10 +814,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>40 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>2 6 40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -854,9 +854,11 @@
         <include>0 2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -867,9 +869,11 @@
         <include>0 2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -880,9 +884,11 @@
         <include>0 2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -895,7 +901,7 @@
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none"/>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -942,7 +948,7 @@
     <rf_band_list ns="global" name="vodacom_za_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7</include>
+        <include>0 2 6 7 19</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
@@ -957,7 +963,7 @@
     <rf_band_list ns="global" name="mtn_za_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7</include>
+        <include>0 2 6 7 19</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
@@ -972,7 +978,7 @@
     <rf_band_list ns="global" name="telkom_za_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>2</include>
+        <include>2 6 19</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
@@ -987,14 +993,14 @@
     <rf_band_list ns="global" name="unitel_mn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 27</include>
+        <include>0 2 27 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1009,7 +1015,7 @@
         <include>77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1054,7 +1060,7 @@
         <include>77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>2 6 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1069,7 +1075,7 @@
         <include>77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>2 6 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1084,7 +1090,7 @@
         <include>77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>2 6 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1092,12 +1098,14 @@
     <rf_band_list ns="global" name="ucell_uz_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6 7</include>
+        <include>0 2 6 7 27</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>2 6 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1108,9 +1116,11 @@
         <include>2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none">
+      <nr5g_sa_bands base="none">
         <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 6 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1118,12 +1128,14 @@
     <rf_band_list ns="global" name="mobiuz_uz_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6</include>
+        <include>0 2 6 19</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none">
+      <nr5g_sa_bands base="none">
         <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1144,14 +1156,14 @@
     <rf_band_list ns="global" name="singtel_sg_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6 7</include>
+        <include>0 2 6 7 37 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 77</include>
+        <include>0 2 6 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 77</include>
+        <include>0 2 6 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1159,14 +1171,14 @@
     <rf_band_list ns="global" name="m1_sg_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6 7</include>
+        <include>0 2 6 7 37 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 77</include>
+        <include>0 2 6 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 77</include>
+        <include>0 2 6 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1174,14 +1186,14 @@
     <rf_band_list ns="global" name="starhub_sg_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6 7</include>
+        <include>0 2 6 7 37 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 77</include>
+        <include>0 2 6 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 77</include>
+        <include>0 2 6 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1204,12 +1216,14 @@
     <rf_band_list ns="global" name="viettel_vn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6</include>
+        <include>0 2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none">
+      <nr5g_sa_bands base="none">
         <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1217,12 +1231,14 @@
     <rf_band_list ns="global" name="vinaphone_vn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6</include>
+        <include>0 2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none">
+      <nr5g_sa_bands base="none">
         <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1230,12 +1246,14 @@
     <rf_band_list ns="global" name="mobifone_vn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 6</include>
+        <include>0 2 6 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none">
+      <nr5g_sa_bands base="none">
         <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1247,10 +1265,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1262,10 +1280,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1292,10 +1310,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>27 40 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1322,10 +1340,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>27 40 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 40 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1336,9 +1354,11 @@
         <include>0 2 6 7 27</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1349,9 +1369,11 @@
         <include>0 2 4 6 7 27</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1359,12 +1381,14 @@
     <rf_band_list ns="global" name="telkomsel_id_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 4 7</include>
+        <include>0 2 4 7 39</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 39</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 2</include>
+        <include>0 2 39</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1375,9 +1399,11 @@
         <include>0 2 4 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 39</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 2</include>
+        <include>0 2 39</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1398,11 +1424,15 @@
     <rf_band_list ns="global" name="smartfren_id_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>4 7</include>
+        <include>4 7 39</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>39</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>39</include>
+      </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
 
@@ -1521,8 +1551,12 @@
         <include>0 2 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
 
@@ -1543,8 +1577,12 @@
         <include>0 2 7</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
 
@@ -1695,14 +1733,14 @@
     <rf_band_list ns="global" name="zain_kw_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7 19 27</include>
+        <include>0 2 6 7 19 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1710,14 +1748,14 @@
     <rf_band_list ns="global" name="stc_kw_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7 19 27</include>
+        <include>0 2 6 7 19 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1725,14 +1763,14 @@
     <rf_band_list ns="global" name="ooredoo_kw_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 2 7 19 27</include>
+        <include>0 2 6 7 19 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>77</include>
+        <include>0 2 27 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1854,12 +1892,14 @@
     <rf_band_list ns="global" name="orange_fr_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 6 18 26 36</include>
+        <include>0 1 2 5 6 18 19 26 27 36</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none" />
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 26 36 76</include>
+        <include>0 1 2 5 6 26 27 36 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1906,12 +1946,14 @@
     <rf_band_list ns="global" name="ee_gb_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 6 18 26 36 44</include>
+        <include>0 1 2 5 6 18 19 26 27 36 44</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none" />
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 26 76</include>
+        <include>0 1 2 5 6 26 27 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -1970,12 +2012,14 @@
     <rf_band_list ns="global" name="vodafone_de_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 6 18 26 36</include>
+        <include>0 1 2 5 6 18 19 26 27 36</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 26 36 76</include>
+        <include>0 1 2 5 6 26 27 36 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2193,14 +2237,14 @@
     <rf_band_list ns="global" name="china_telecom_cn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 3 6</include>
+        <include>0 1 2 3 4 6 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 39 76</include>
+        <include>0 4 39 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>76</include>
+        <include>0 4 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2208,14 +2252,14 @@
     <rf_band_list ns="global" name="china_mobile_cn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>1 6 32 37 38 39</include>
+        <include>0 1 2 4 6 7 32 37 38 39 40</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>26 39 77</include>
+        <include>26 27 39 40 77 78</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>39 77</include>
+        <include>0 2 27 39 40 77 78</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2223,14 +2267,14 @@
     <rf_band_list ns="global" name="china_unicom_cn_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 3 6 38 39</include>
+        <include>0 1 2 3 6 7 38 39</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 39 76</include>
+        <include>0 7 39 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>76</include>
+        <include>0 2 7 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2242,10 +2286,10 @@
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>26 39 76 77</include>
+        <include>26 27 39 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>39</include>
+        <include>27 39</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2281,14 +2325,14 @@
     <rf_band_list ns="global" name="cmhk_hk_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 3 5 6 26 38</include>
+        <include>0 1 2 3 5 6 7 26 37 38 40</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 1 5 6 26 38 75 76 77</include>
+        <include>0 1 2 5 6 26 27 38 75 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 26 38 75 76 77</include>
+        <include>0 1 2 5 6 26 27 38 75 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2296,14 +2340,14 @@
     <rf_band_list ns="global" name="csl_mobile_(network_1)_hk_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 3 5 6 26 38</include>
+        <include>0 1 2 3 5 6 7 26 31 37 38</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>0 1 5 6 26 75 76 77</include>
+        <include>0 1 2 5 6 26 27 75 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 26 75 76 77</include>
+        <include>0 1 2 5 6 26 27 75 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2311,12 +2355,14 @@
     <rf_band_list ns="global" name="smartone_hk_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 3 5 6 26</include>
+        <include>0 1 2 3 5 6 7 26 31 37</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 3 5 6 26 75 76 77</include>
+        <include>0 1 2 3 5 6 26 27 75 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2337,14 +2383,14 @@
     <rf_band_list ns="global" name="ctm_mo_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 6</include>
+        <include>0 1 2 5 6 7 27</include>
       </lte_bands>
       <tds_bands base="none"/>
       <nr5g_sa_bands base="none">
-        <include>76 77</include>
+        <include>0 2 27 76 77</include>
       </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>75 76 77</include>
+        <include>0 2 27 75 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2365,12 +2411,14 @@
     <rf_band_list ns="global" name="taiwan_mobile_telecom_tw_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 6 26 44</include>
+        <include>0 1 2 5 6 7 26 27 44</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 26 76</include>
+        <include>0 1 2 5 6 26 27 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2404,12 +2452,14 @@
     <rf_band_list ns="global" name="chunghwa_telecom_tw_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 6 44</include>
+        <include>0 1 2 5 6 7 27 44</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 6 76</include>
+        <include>0 1 2 5 6 27 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2417,12 +2467,14 @@
     <rf_band_list ns="global" name="fareastone_telecom_tw_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>0 1 5 26 36 39 44</include>
+        <include>0 1 2 5 6 7 26 27 36 39 44</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
       <nr5g_nsa_bands base="none">
-        <include>0 1 5 26 36 39 76</include>
+        <include>0 1 2 5 26 27 36 39 76 77</include>
       </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
@@ -2469,11 +2521,15 @@
     <rf_band_list ns="global" name="usa_trade_b">
       <gw_bands base="hardware"/>
       <lte_bands base="none">
-        <include>1 3 4 10 15 39 44 64</include>
+        <include>1 3 4 10 11 12 15 16 28 29 39 44 64 65 70</include>
       </lte_bands>
       <tds_bands base="none"/>
-      <nr5g_sa_bands base="none"/>
-      <nr5g_nsa_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 1 4 40 65 70 76 259 260</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 1 4 40 65 70 76 259 260</include>
+      </nr5g_nsa_bands>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
 
@@ -2502,6 +2558,1528 @@
       <nr5g_nsa_bands base="none"/>
       <nr5g_nrdc_bands base="none" />
     </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list eu_ce_b -->
+    <rf_band_list ns="global" name="eu_ce_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 6 19 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 19 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list us_fcc_b -->
+    <rf_band_list ns="global" name="us_fcc_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>1 3 4 11 16 28 29 65 70</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 1 65 70 76</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 1 65 70 76</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list docomo_jp_b -->
+    <rf_band_list ns="global" name="docomo_jp_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 18 20 27 41</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>76 77 78</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 76 77 78</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list kddi_au_jp_b -->
+    <rf_band_list ns="global" name="kddi_au_jp_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 10 17 25 27 40 41</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 76 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 76 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list softbank_jp_b -->
+    <rf_band_list ns="global" name="softbank_jp_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7 10 27 40 41</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 76 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 76 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list rakuten_jp_b -->
+    <rf_band_list ns="global" name="rakuten_jp_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 17 27 41</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>76</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 27 76</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list japan_fallback_b -->
+    <rf_band_list ns="global" name="japan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7 10 17 18 20 25 27 40 41</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 76 77 78</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 76 77 78</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list china_fallback_b -->
+    <rf_band_list ns="global" name="china_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 4 7 38 39 40</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 4 7 27 40 77 78</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 4 7 27 40 77 78</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list singapore_fallback_b -->
+    <rf_band_list ns="global" name="singapore_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 37 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list umobile_my_b -->
+    <rf_band_list ns="global" name="umobile_my_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list yes_my_b -->
+    <rf_band_list ns="global" name="yes_my_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list malaysia_fallback_b -->
+    <rf_band_list ns="global" name="malaysia_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list true_th_b -->
+    <rf_band_list ns="global" name="true_th_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 40</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 40</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list thailand_fallback_b -->
+    <rf_band_list ns="global" name="thailand_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 40</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 40</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list vietnam_fallback_b -->
+    <rf_band_list ns="global" name="vietnam_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list xl_id_b -->
+    <rf_band_list ns="global" name="xl_id_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 39</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 39</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list indonesia_fallback_b -->
+    <rf_band_list ns="global" name="indonesia_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 39</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 39</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list dito_ph_b -->
+    <rf_band_list ns="global" name="dito_ph_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>27 40</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list philippines_fallback_b -->
+    <rf_band_list ns="global" name="philippines_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 27 40</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list cellcard_kh_b -->
+    <rf_band_list ns="global" name="cellcard_kh_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list smart_kh_b -->
+    <rf_band_list ns="global" name="smart_kh_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list metfone_kh_b -->
+    <rf_band_list ns="global" name="metfone_kh_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list cambodia_fallback_b -->
+    <rf_band_list ns="global" name="cambodia_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list unitel_la_b -->
+    <rf_band_list ns="global" name="unitel_la_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list laotel_la_b -->
+    <rf_band_list ns="global" name="laotel_la_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list beeline_la_b -->
+    <rf_band_list ns="global" name="beeline_la_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list laos_fallback_b -->
+    <rf_band_list ns="global" name="laos_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list mytel_mm_b -->
+    <rf_band_list ns="global" name="mytel_mm_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list myanmar_fallback_b -->
+    <rf_band_list ns="global" name="myanmar_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list dst_bn_b -->
+    <rf_band_list ns="global" name="dst_bn_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list imagine_bn_b -->
+    <rf_band_list ns="global" name="imagine_bn_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list brunei_fallback_b -->
+    <rf_band_list ns="global" name="brunei_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list tstar_tw_b -->
+    <rf_band_list ns="global" name="tstar_tw_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list taiwan_fallback_b -->
+    <rf_band_list ns="global" name="taiwan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list three_hk_b -->
+    <rf_band_list ns="global" name="three_hk_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 31 37</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list hongkong_fallback_b -->
+    <rf_band_list ns="global" name="hongkong_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 31 37 40</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list smartone_mo_b -->
+    <rf_band_list ns="global" name="smartone_mo_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list three_mo_b -->
+    <rf_band_list ns="global" name="three_mo_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list macau_fallback_b -->
+    <rf_band_list ns="global" name="macau_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 7 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list mongolia_fallback_b -->
+    <rf_band_list ns="global" name="mongolia_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 27 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list altel_kz_b -->
+    <rf_band_list ns="global" name="altel_kz_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 6 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list kazakhstan_fallback_b -->
+    <rf_band_list ns="global" name="kazakhstan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 6 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list uzmobile_uz_b -->
+    <rf_band_list ns="global" name="uzmobile_uz_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list perfectum_uz_b -->
+    <rf_band_list ns="global" name="perfectum_uz_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none"/>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list evo_uz_b -->
+    <rf_band_list ns="global" name="evo_uz_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list uzbekistan_fallback_b -->
+    <rf_band_list ns="global" name="uzbekistan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19 27 39</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list beeline_kg_b -->
+    <rf_band_list ns="global" name="beeline_kg_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list megacom_kg_b -->
+    <rf_band_list ns="global" name="megacom_kg_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list o_kg_b -->
+    <rf_band_list ns="global" name="o_kg_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list kyrgyzstan_fallback_b -->
+    <rf_band_list ns="global" name="kyrgyzstan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list tcell_tj_b -->
+    <rf_band_list ns="global" name="tcell_tj_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list megafon_tj_b -->
+    <rf_band_list ns="global" name="megafon_tj_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list babilon_tj_b -->
+    <rf_band_list ns="global" name="babilon_tj_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list zetmobile_tj_b -->
+    <rf_band_list ns="global" name="zetmobile_tj_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list tajikistan_fallback_b -->
+    <rf_band_list ns="global" name="tajikistan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list tmcell_tm_b -->
+    <rf_band_list ns="global" name="tmcell_tm_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list mts_tm_b -->
+    <rf_band_list ns="global" name="mts_tm_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list agts_tm_b -->
+    <rf_band_list ns="global" name="agts_tm_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none"/>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list turkmenistan_fallback_b -->
+    <rf_band_list ns="global" name="turkmenistan_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list uae_fallback_b -->
+    <rf_band_list ns="global" name="uae_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>2 6 40 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list o2_gb_b -->
+    <rf_band_list ns="global" name="o2_gb_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list vodafone_gb_b -->
+    <rf_band_list ns="global" name="vodafone_gb_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list three_gb_b -->
+    <rf_band_list ns="global" name="three_gb_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list gb_fallback_b -->
+    <rf_band_list ns="global" name="gb_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list telekom_de_b -->
+    <rf_band_list ns="global" name="telekom_de_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list o2_de_b -->
+    <rf_band_list ns="global" name="o2_de_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list de_fallback_b -->
+    <rf_band_list ns="global" name="de_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 6 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list sfr_fr_b -->
+    <rf_band_list ns="global" name="sfr_fr_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list bouygues_fr_b -->
+    <rf_band_list ns="global" name="bouygues_fr_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list free_fr_b -->
+    <rf_band_list ns="global" name="free_fr_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list fr_fallback_b -->
+    <rf_band_list ns="global" name="fr_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>0 2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list sa_fallback_b -->
+    <rf_band_list ns="global" name="sa_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 7 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list kw_fallback_b -->
+    <rf_band_list ns="global" name="kw_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list qa_fallback_b -->
+    <rf_band_list ns="global" name="qa_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list batelco_bh_b -->
+    <rf_band_list ns="global" name="batelco_bh_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list zain_bh_b -->
+    <rf_band_list ns="global" name="zain_bh_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list stc_bh_b -->
+    <rf_band_list ns="global" name="stc_bh_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 7 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list bh_fallback_b -->
+    <rf_band_list ns="global" name="bh_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 7 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list omantel_om_b -->
+    <rf_band_list ns="global" name="omantel_om_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19 27 37</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list ooredoo_om_b -->
+    <rf_band_list ns="global" name="ooredoo_om_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19 27 37</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list vodafone_om_b -->
+    <rf_band_list ns="global" name="vodafone_om_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19 27</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list om_fallback_b -->
+    <rf_band_list ns="global" name="om_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19 27 37</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>27 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>0 2 27 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list eg_fallback_b -->
+    <rf_band_list ns="global" name="eg_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>40 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list cellc_za_b -->
+    <rf_band_list ns="global" name="cellc_za_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list rain_za_b -->
+    <rf_band_list ns="global" name="rain_za_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>37 40</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>40 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list za_fallback_b -->
+    <rf_band_list ns="global" name="za_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 6 19 37 40</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>40 77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>40 77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list iam_ma_b -->
+    <rf_band_list ns="global" name="iam_ma_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list orange_ma_b -->
+    <rf_band_list ns="global" name="orange_ma_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list inwi_ma_b -->
+    <rf_band_list ns="global" name="inwi_ma_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list ma_fallback_b -->
+    <rf_band_list ns="global" name="ma_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none">
+        <include>2 19</include>
+      </lte_bands>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none">
+        <include>77</include>
+      </nr5g_sa_bands>
+      <nr5g_nsa_bands base="none">
+        <include>77</include>
+      </nr5g_nsa_bands>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta: them rf_band_list us_fallback_b -->
+    <rf_band_list ns="global" name="us_fallback_b">
+      <gw_bands base="hardware"/>
+      <lte_bands base="none"/>
+      <tds_bands base="none"/>
+      <nr5g_sa_bands base="none"/>
+      <nr5g_nsa_bands base="none"/>
+      <nr5g_nrdc_bands base="none" />
+    </rf_band_list>
+
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_altel_kz_b_p"> 401-07 401-08 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_uzmobile_uz_b_p"> 434-08 434-03 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_perfectum_uz_b_p"> 434-06 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_evo_uz_b_p"> 434-09 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_umobile_my_b_p"> 502-18 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_yes_my_b_p"> 502-11 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_true_th_b_p"> 520-05 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_xl_id_b_p"> 510-11 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_dito_ph_b_p"> 515-66 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_mytel_mm_b_p"> 414-09 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_cellc_za_b_p"> 655-07 </plmn_list>
+    <!-- XDA delta plmn -->
+    <plmn_list ns="global" name="xda_rain_za_b_p"> 655-19 655-38 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_437_m"> 437 </mcc_list>
+    <plmn_list ns="global" name="xda_beeline_kg_b_p"> 437-01 </plmn_list>
+    <plmn_list ns="global" name="xda_megacom_kg_b_p"> 437-05 </plmn_list>
+    <plmn_list ns="global" name="xda_o_kg_b_p"> 437-09 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_436_m"> 436 </mcc_list>
+    <plmn_list ns="global" name="xda_tcell_tj_b_p"> 436-01 436-02 436-12 </plmn_list>
+    <plmn_list ns="global" name="xda_megafon_tj_b_p"> 436-03 </plmn_list>
+    <plmn_list ns="global" name="xda_babilon_tj_b_p"> 436-04 436-10 </plmn_list>
+    <plmn_list ns="global" name="xda_zetmobile_tj_b_p"> 436-05 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_438_m"> 438 </mcc_list>
+    <plmn_list ns="global" name="xda_tmcell_tm_b_p"> 438-02 </plmn_list>
+    <plmn_list ns="global" name="xda_mts_tm_b_p"> 438-01 </plmn_list>
+    <plmn_list ns="global" name="xda_agts_tm_b_p"> 438-03 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_466_m"> 466 </mcc_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_454_m"> 454 </mcc_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_455_m"> 455 </mcc_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_440_441_m"> 440 441 </mcc_list>
+    <plmn_list ns="global" name="xda_docomo_jp_b_p"> 440-10 440-11 440-12 440-13 440-20 </plmn_list>
+    <plmn_list ns="global" name="xda_kddi_au_jp_b_p"> 440-50 440-51 440-52 440-53 440-54 440-70 440-71 440-72 440-73 440-74 </plmn_list>
+    <plmn_list ns="global" name="xda_softbank_jp_b_p"> 440-20 440-30 440-31 440-32 440-40 440-41 440-42 440-88 440-89 </plmn_list>
+    <plmn_list ns="global" name="xda_rakuten_jp_b_p"> 440-11 441-10 441-11 441-12 441-13 441-14 441-15 441-16 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_460_m"> 460 </mcc_list>
+    <plmn_list ns="global" name="xda_cmcc_cn_b_p"> 460-00 460-02 460-07 </plmn_list>
+    <plmn_list ns="global" name="xda_cu_cn_b_p"> 460-01 460-09 </plmn_list>
+    <plmn_list ns="global" name="xda_ctc_cn_b_p"> 460-03 460-11 </plmn_list>
+    <plmn_list ns="global" name="xda_cbn_cn_b_p"> 460-15 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_456_m"> 456 </mcc_list>
+    <plmn_list ns="global" name="xda_cellcard_kh_b_p"> 456-01 </plmn_list>
+    <plmn_list ns="global" name="xda_smart_kh_b_p"> 456-02 </plmn_list>
+    <plmn_list ns="global" name="xda_metfone_kh_b_p"> 456-08 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_457_m"> 457 </mcc_list>
+    <plmn_list ns="global" name="xda_unitel_la_b_p"> 457-08 </plmn_list>
+    <plmn_list ns="global" name="xda_laotel_la_b_p"> 457-01 </plmn_list>
+    <plmn_list ns="global" name="xda_beeline_la_b_p"> 457-02 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_528_m"> 528 </mcc_list>
+    <plmn_list ns="global" name="xda_dst_bn_b_p"> 528-11 </plmn_list>
+    <plmn_list ns="global" name="xda_imagine_bn_b_p"> 528-02 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_234_235_m"> 234 235 </mcc_list>
+    <plmn_list ns="global" name="xda_ee_gb_b_p"> 234-30 234-31 234-32 234-33 234-34 </plmn_list>
+    <plmn_list ns="global" name="xda_o2_gb_b_p"> 234-10 234-11 234-02 </plmn_list>
+    <plmn_list ns="global" name="xda_vodafone_gb_b_p"> 234-15 234-07 234-09 </plmn_list>
+    <plmn_list ns="global" name="xda_three_gb_b_p"> 234-20 235-94 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_262_m"> 262 </mcc_list>
+    <plmn_list ns="global" name="xda_telekom_de_b_p"> 262-01 262-06 262-78 </plmn_list>
+    <plmn_list ns="global" name="xda_vodafone_de_b_p"> 262-02 262-09 262-04 </plmn_list>
+    <plmn_list ns="global" name="xda_o2_de_b_p"> 262-07 262-03 262-05 262-08 262-11 262-17 262-77 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_208_m"> 208 </mcc_list>
+    <plmn_list ns="global" name="xda_orange_fr_b_p"> 208-01 208-02 208-91 </plmn_list>
+    <plmn_list ns="global" name="xda_sfr_fr_b_p"> 208-10 208-09 208-13 </plmn_list>
+    <plmn_list ns="global" name="xda_bouygues_fr_b_p"> 208-20 208-88 208-21 </plmn_list>
+    <plmn_list ns="global" name="xda_free_fr_b_p"> 208-15 208-16 208-35 208-36 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_419_m"> 419 </mcc_list>
+    <plmn_list ns="global" name="xda_zain_kw_b_p"> 419-02 </plmn_list>
+    <plmn_list ns="global" name="xda_ooredoo_kw_b_p"> 419-03 </plmn_list>
+    <plmn_list ns="global" name="xda_stc_kw_b_p"> 419-04 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_426_m"> 426 </mcc_list>
+    <plmn_list ns="global" name="xda_batelco_bh_b_p"> 426-01 426-05 </plmn_list>
+    <plmn_list ns="global" name="xda_zain_bh_b_p"> 426-02 </plmn_list>
+    <plmn_list ns="global" name="xda_stc_bh_b_p"> 426-04 426-06 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_422_m"> 422 </mcc_list>
+    <plmn_list ns="global" name="xda_omantel_om_b_p"> 422-02 422-04 </plmn_list>
+    <plmn_list ns="global" name="xda_ooredoo_om_b_p"> 422-03 </plmn_list>
+    <plmn_list ns="global" name="xda_vodafone_om_b_p"> 422-06 </plmn_list>
+    <!-- XDA delta mcc -->
+    <mcc_list ns="global" name="xda_604_m"> 604 </mcc_list>
+    <plmn_list ns="global" name="xda_iam_ma_b_p"> 604-01 604-06 </plmn_list>
+    <plmn_list ns="global" name="xda_orange_ma_b_p"> 604-00 </plmn_list>
+    <plmn_list ns="global" name="xda_inwi_ma_b_p"> 604-02 604-05 </plmn_list>
   </initial>
 
   <rule>
@@ -3440,7 +5018,25 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_cellc_za_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="cellc_za_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_rain_za_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="rain_za_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3525,7 +5121,16 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_altel_kz_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="altel_kz_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3572,7 +5177,34 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_uzmobile_uz_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="uzmobile_uz_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_perfectum_uz_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="perfectum_uz_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_evo_uz_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="evo_uz_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3695,7 +5327,25 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_umobile_my_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="umobile_my_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_yes_my_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="yes_my_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3733,7 +5383,16 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_true_th_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="true_th_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3762,7 +5421,16 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_dito_ph_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="dito_ph_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3809,7 +5477,16 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_xl_id_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="xl_id_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -3961,7 +5638,16 @@
           <stop />
         </then>
       </if>
-      <rf_bands list="default_b"/>
+            <if>
+        <cond>
+          <serving_plmn_in list="xda_mytel_mm_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="mytel_mm_b"/>
+          <stop />
+        </then>
+      </if>
+<rf_bands list="default_b"/>
       <stop />
     </actions>
   </rule>
@@ -4787,4 +6473,663 @@
         <stop />
       </then>
     </if>
-  </policy>
+    <!-- XDA delta rule MCC 437 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_437_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_beeline_kg_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="beeline_kg_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_megacom_kg_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="megacom_kg_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_o_kg_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="o_kg_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="kyrgyzstan_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 436 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_436_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_tcell_tj_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="tcell_tj_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_megafon_tj_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="megafon_tj_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_babilon_tj_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="babilon_tj_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_zetmobile_tj_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="zetmobile_tj_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="tajikistan_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 438 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_438_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_tmcell_tm_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="tmcell_tm_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_mts_tm_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="mts_tm_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_agts_tm_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="agts_tm_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="turkmenistan_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 466 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_466_m"/>
+    </conditions>
+    <actions>
+
+      <rf_bands list="taiwan_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 454 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_454_m"/>
+    </conditions>
+    <actions>
+
+      <rf_bands list="hongkong_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 455 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_455_m"/>
+    </conditions>
+    <actions>
+
+      <rf_bands list="macau_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 440 441 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_440_441_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_docomo_jp_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="docomo_jp_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_kddi_au_jp_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="kddi_au_jp_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_softbank_jp_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="softbank_jp_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_rakuten_jp_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="rakuten_jp_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="japan_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 460 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_460_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_cmcc_cn_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="china_mobile_cn_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_cu_cn_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="china_unicom_cn_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_ctc_cn_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="china_telecom_cn_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_cbn_cn_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="cbn_cn_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="china_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 456 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_456_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_cellcard_kh_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="cellcard_kh_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_smart_kh_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="smart_kh_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_metfone_kh_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="metfone_kh_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="cambodia_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 457 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_457_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_unitel_la_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="unitel_la_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_laotel_la_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="laotel_la_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_beeline_la_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="beeline_la_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="laos_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 528 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_528_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_dst_bn_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="dst_bn_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_imagine_bn_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="imagine_bn_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="brunei_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 234 235 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_234_235_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_ee_gb_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="ee_gb_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_o2_gb_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="o2_gb_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_vodafone_gb_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="vodafone_gb_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_three_gb_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="three_gb_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="gb_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 262 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_262_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_telekom_de_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="telekom_de_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_vodafone_de_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="vodafone_de_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_o2_de_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="o2_de_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="de_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 208 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_208_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_orange_fr_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="orange_fr_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_sfr_fr_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="sfr_fr_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_bouygues_fr_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="bouygues_fr_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_free_fr_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="free_fr_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="fr_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 419 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_419_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_zain_kw_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="zain_kw_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_ooredoo_kw_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="ooredoo_kw_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_stc_kw_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="stc_kw_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="kw_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 426 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_426_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_batelco_bh_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="batelco_bh_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_zain_bh_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="zain_bh_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_stc_bh_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="stc_bh_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="bh_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 422 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_422_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_omantel_om_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="omantel_om_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_ooredoo_om_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="ooredoo_om_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_vodafone_om_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="vodafone_om_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="om_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+
+  <!-- XDA delta rule MCC 604 -->
+  <rule>
+    <conditions>
+      <have_location/>
+      <location_mcc_in list="xda_604_m"/>
+    </conditions>
+    <actions>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_iam_ma_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="iam_ma_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_orange_ma_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="orange_ma_b"/>
+          <stop />
+        </then>
+      </if>
+      <if>
+        <cond>
+          <serving_plmn_in list="xda_inwi_ma_b_p"/>
+        </cond>
+        <then>
+          <rf_bands list="inwi_ma_b"/>
+          <stop />
+        </then>
+      </if>
+      <rf_bands list="ma_fallback_b"/>
+      <stop />
+    </actions>
+  </rule>
+</policy>
