@@ -3,6 +3,7 @@ ro.vendor.qti.va_odm.support=1
 vendor.audio.3rd_mic_attached=true
 
 # Bluetooth
+persist.vendor.qcom.bluetooth.aac_abr_support=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_2_support=true
 ro.vendor.bt.bdaddr_path=/data/vendor/etc/bluetooth_bdaddr
 
@@ -13,3 +14,6 @@ persist.vendor.display.opec_mode=0
 persist.vendor.display.pcc_matrix=0.000000,0.000000,0.000000,0.000000,0.117647,0.235294
 persist.vendor.display.sspp_color_mode=1
 vendor.display.hmd_mode=0
+
+# Memory / LMKD
+ro.lmk.critical_available_threshold=18
