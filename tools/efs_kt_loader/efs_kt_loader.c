@@ -50,7 +50,8 @@
 #define NV_ITEM_DATA_LEN 128
 
 #define VOLTE_EFS_SRC "/vendor/etc/volte-efs/kt"
-#define VOLTE_KT_STAMP "/data/vendor/misc/volte_kt_efs.stamp"
+/* nv_updater can create files in the init-created, nvconfig_file_type directory. */
+#define VOLTE_KT_STAMP "/data/vendor/misc/nvconfig/volte_kt_efs.stamp"
 /* 3: global RF/5G band_set + plmn (XDA delta merge 2026-10) */
 #define VOLTE_KT_STAMP_VERSION "3"
 
